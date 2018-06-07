@@ -28,9 +28,10 @@
     "npm": "6.1.0"
   },
   "scripts": {
+    "postinstall": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode=development --watch",
-    "postinstall": "webpack"
+    "webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
