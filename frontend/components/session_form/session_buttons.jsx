@@ -3,11 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const SessionButtons = ({ currentUser, logout, login, signup,openModal }) => {
+const SessionButtons = ({ currentUser, logout, login, signup, openModal }) => {
   
   const loggedOutButtons = () => (
     <nav className="login-signup">
-      <button onClick={() => openModal}>Login</button>
+      <button onClick={openModal}>Login</button>
       &nbsp;or&nbsp;
       <button onClick={() => login}>Signup</button>
     </nav>
