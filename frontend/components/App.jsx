@@ -7,11 +7,11 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import {Route, HashRouter} from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-// import Modal from './modal/modal';
-// {/* <Modal/> */}
+import Modal from './modal/modal';
 const App = () => (
   <div>
     <header className="header">
+    <Modal/>
     <Header/>
     <SessionButtonContainer/>
     </header>
