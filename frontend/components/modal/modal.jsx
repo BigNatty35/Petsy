@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 import LoginFormContainer from '../session_form/login_form_container';
 import SignupFormContainer from '../session_form/signup_form_container';
 
-function Modal(props) {
-  if (!this.props.modal) {
+function Modal({modal, closeModal}) {
+  if (!modal) {
     return null;
   }
   let component;
-  switch (this.props.modal) {
+  switch (modal) {
     case 'login':
       component = <LoginFormContainer />;
       break;
@@ -20,9 +20,9 @@ function Modal(props) {
       return null;
   }
   return (
-    <div className="this.props.-background" onClick={this.props.closeModal}>
+    <div className="modal-background" onClick={closeModal}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>
-        {component}
+        { component }
       </div>
     </div>
   );
