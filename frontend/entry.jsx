@@ -4,6 +4,7 @@ import * as ApiUtil from "./util/session_api_util";
 import configureStore from "./store/store";
 import Root from './components/root';
 import {signup, login} from './actions/session_actions';
+
 document.addEventListener("DOMContentLoaded", () => {
     const store = configureStore();
     window.getState = store.getState;

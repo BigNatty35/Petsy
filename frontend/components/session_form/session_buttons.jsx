@@ -3,13 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-
-const SessionButtons = ({ currentUser, logout, login, signup }) => {
+const SessionButtons = ({ currentUser, logout, login, signup,openModal }) => {
+  
   const loggedOutButtons = () => (
     <nav className="login-signup">
-      <button onClick={login}>Login</button>
+      <button onClick={() => openModal}>Login</button>
       &nbsp;or&nbsp;
-      <button onClick={signup}>Sign up</button>
+      <button onClick={() => login}>Signup</button>
     </nav>
   );
   const loggedInButtons = () => (
@@ -18,8 +18,9 @@ const SessionButtons = ({ currentUser, logout, login, signup }) => {
     </hgroup>
   );
 
-  return currentUser ? loggedOutButtons() : loggedInButtons();
+  return currentUser ? loggedInButtons() : loggedOutButtons();
 };
 
 
 export default SessionButtons;
+

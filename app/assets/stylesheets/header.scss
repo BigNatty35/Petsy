@@ -1,11 +1,23 @@
 .header {
-  display: flex;
+//   display: flex;
   flex-direction: row;
-  display: block;
+//   display: block;
   
 }
 
 .logo {
   color: orange;
-  position: relative;
+  float: left;
+}
+
+.login-signup {
+  float: right;
+}
+
+.searchbar {
+  justify-content: center;
+}
+
+.header-button {
+  float: right;
 }
