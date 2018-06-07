@@ -34,13 +34,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BigNatty35/Petsy.git"
+    "url": "git+https://github.com/BigNatty35/Regretsy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BigNatty35/Petsy/issues"
+    "url": "https://github.com/BigNatty35/Regretsy/issues"
   },
-  "homepage": "https://github.com/BigNatty35/Petsy#readme"
+  "homepage": "https://github.com/BigNatty35/Regretsy#readme"
 }
