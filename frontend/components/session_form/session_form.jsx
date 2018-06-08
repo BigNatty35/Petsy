@@ -11,12 +11,26 @@ class SessionForm extends React.Component {
       email: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
+    this.handleDemoSignupSubmit = this.handleDemoSignupSubmit.bind(this);
   }
 
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
     });
+  }
+
+  handleDemoSubmit(e) {
+    e.preventDefault();
+    const user = Object.assign({}, this.state);
+    this.props.processForm({ username: "carey1", password: "password" }).then(this.props.closeModal());
+  }
+
+  handleDemoSignupSubmit(e) {
+    e.preventDefault();
+    const user = Object.assign({}, this.state);
+    this.props.demoForm({ username: "carey1", password: "password" }).then(this.props.closeModal());
   }
 
   handleSubmit(e) {
@@ -43,11 +57,10 @@ class SessionForm extends React.Component {
     
     return (
       <div className="login-form-container">
+        {this.renderErrors()}
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Regretsy!
           <br />
-          {/* Please {this.props.formType} or {this.props.navLink} */}
-          {this.renderErrors()}
           <div className="login-form">
             <br />
             <label>Username:
@@ -67,6 +80,7 @@ class SessionForm extends React.Component {
             </label>
             <br />
             <input className="session-submit" type="submit" value={this.props.formType} />
+            <input onClick={this.handleDemoSubmit} className="session-submit" type="submit" value={"DEMO"} />
           </div>
         </form>
       </div>
@@ -74,10 +88,9 @@ class SessionForm extends React.Component {
     } else {
       return (
         <div className="login-form-container">
-          <form onSubmit={this.handleSubmit} className="login-form-box">
+          <form className="login-form-box">
             Regretsy!
           <br />
-            {/* Please {this.props.formType} or {this.props.navLink} */}
             {this.renderErrors()}
             <div className="login-form">
               <br />
@@ -105,9 +118,12 @@ class SessionForm extends React.Component {
                 />
               </label>
               <br />
-              <input className="session-submit" type="submit" value={this.props.formType} />
+              <input onClick={this.handleSubmit} className="session-submit" type="submit" value={this.props.formType} />
+              <input onClick={this.handleDemoSignupSubmit} className="session-submit" type="submit" value={"DEMO"}/>
             </div>
+              
           </form>
+
         </div>
       );
     }
