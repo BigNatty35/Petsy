@@ -36,14 +36,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    // const values = Object.values(user);
-    for (const value in user) {
-      if (user[value] === "") {
-        this.props.processForm(user).then(this.renderErrors());
-      } else {
-        this.props.processForm(user).then(this.props.closeModal());
-      }
-    }
+    this.props.processForm(user).then(() => this.props.closeModal);
   }
 
   renderErrors() {
@@ -61,7 +54,7 @@ class SessionForm extends React.Component {
   render() {
     if (this.props.formType === "login") {
 
-    
+   
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">

@@ -1,10 +1,11 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
+import { clearErrors } from '../../actions/session_actions';
 import { connect } from 'react-redux';
 import LoginFormContainer from '../session_form/login_form_container';
 import SignupFormContainer from '../session_form/signup_form_container';
 
-function Modal({modal, closeModal}) {
+function Modal({modal, closeModal, clearErrors}) {
   if (!modal) {
     return null;
   }
@@ -19,9 +20,9 @@ function Modal({modal, closeModal}) {
     default:
       return null;
   }
-
+  
   return (
-    <div className="modal-background" onClick={closeModal}>
+    <div className="modal-background" onClick={(event) => {closeModal(); clearErrors();}}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>
         { component }
       </div>
@@ -37,7 +38,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 
