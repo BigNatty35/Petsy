@@ -9,7 +9,7 @@ const SessionButtons = ({ currentUser, logout, login, signup, openModal }) => {
     <nav className="login-signup">
       <button onClick={() => openModal('login')}>Login</button>
       &nbsp;or&nbsp;
-      <button onClick={() => login}>Signup</button>
+      <button onClick={() => openModal('signup')}>Signup</button>
     </nav>
   );
   const loggedInButtons = () => (

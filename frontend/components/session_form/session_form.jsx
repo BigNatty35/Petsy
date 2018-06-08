@@ -7,7 +7,8 @@ class SessionForm extends React.Component {
     super(props);
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      email: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -37,12 +38,15 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    if (this.props.formType === "login") {
+
+    
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Regretsy!
           <br />
-          Please {this.props.formType} or {this.props.navLink}
+          {/* Please {this.props.formType} or {this.props.navLink} */}
           {this.renderErrors()}
           <div className="login-form">
             <br />
@@ -67,6 +71,47 @@ class SessionForm extends React.Component {
         </form>
       </div>
     );
+    } else {
+      return (
+        <div className="login-form-container">
+          <form onSubmit={this.handleSubmit} className="login-form-box">
+            Regretsy!
+          <br />
+            {/* Please {this.props.formType} or {this.props.navLink} */}
+            {this.renderErrors()}
+            <div className="login-form">
+              <br />
+              <label>Username:
+              <input type="text"
+                  value={this.state.username}
+                  onChange={this.update('username')}
+                  className="login-input"
+                />
+              </label>
+              <br />
+              <label>Email:
+              <input type="text"
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  className="login-input"
+                />
+              </label>
+              <br />
+              <label>Password:
+              <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                />
+              </label>
+              <br />
+              <input className="session-submit" type="submit" value={this.props.formType} />
+            </div>
+          </form>
+        </div>
+      );
+    }
+
   }
 }
 

@@ -22,11 +22,11 @@ export default class SearchBar extends Component {
       <form onSubmit={this.onFormSubmit} >
         <input
           placeholder="Search for items"
-          className=""
+          className="search-field"
           value={this.state.term}
           onChange={this.onInputChange} />
 
-        <span className="">
+        <span className="outer-search">
           <button type='submit' className="search-button">Submit</button>
         </span>
       </form>

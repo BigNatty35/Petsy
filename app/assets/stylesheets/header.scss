@@ -1,21 +1,45 @@
 .header {
-//   display: flex;
+  // display: flex;
   flex-direction: row;
 //   display: block;
   
 }
 
 .logo {
-  color: orange;
+  color: #f45800;
   float: left;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 43px;
 }
 
 .login-signup {
   float: right;
+  padding-top: 50px;
 }
 
 .searchbar {
-  justify-content: center;
+  position: fixed; /* or absolute */
+  top: 10%;
+  left: 20%;
+  color: #f45800;
+  
+}
+.search-field {
+  width: 385px;
+  // height: 50px;
+  box-sizing: border-box;
+}
+
+.outer-search {
+  height: 79px;
+}
+.search-button {
+  color: white;
+  background-color: #f45800
+  // border-radius: 30px
+  
 }
 
 .header-button {
@@ -38,3 +62,32 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+ .close-x {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+ }
+
+ .login-form-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .login-form {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
+
+ .login-input {
+   margin-left: 20px;
+ }
+
+ .login-form-box {
+   outline: 1px solid black;
+   padding: 20px;
+   background: white;
+   position: relative;
+ }
