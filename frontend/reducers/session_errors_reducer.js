@@ -1,6 +1,5 @@
-import RECEIVE_SESSION_ERRORS from "../actions/session_actions";
-import RECEIVE_CURRENT_USER from "../actions/session_actions";
-
+import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER} from "../actions/session_actions";
+import {merge} from "lodash";
 
 
 export default (state = [], action) => {

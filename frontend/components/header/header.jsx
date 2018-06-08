@@ -9,7 +9,7 @@ const Header = () => {
     <header>
     <nav>
     <div>
-      <h1 className="logo">Regretsy</h1>
+      <h1 className="logo">regrEtsy</h1>
       <div className="searchbar">
       <SearchBar/>
       </div>
