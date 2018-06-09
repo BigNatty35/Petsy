@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { closeModal } from '../../actions/modal_actions';
+import { closeModal, openModal } from '../../actions/modal_actions';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -52,13 +52,14 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    if (this.props.formType === "login") {
+    if (this.props.formType === "signin") {
 
    
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Regretsy!
+          <a onClick={() => this.props.openModal("signup")}> <h3 className="sessionTab">Sign Up</h3></a>
+           <h2>Login!</h2>
           <br />
           <div className="login-form">
             <br />
@@ -78,7 +79,7 @@ class SessionForm extends React.Component {
                 />
             </label>
             <br />
-            <input className="session-submit" type="submit" value={this.props.formType} />
+            <input className="login-button"className="session-submit" type="submit" value={this.props.formType} />
             <input onClick={this.handleDemoSubmit} className="session-submit" type="submit" value={"DEMO"} />
             {this.renderErrors()}
           </div>
@@ -89,7 +90,8 @@ class SessionForm extends React.Component {
       return (
         <div className="login-form-container">
           <form className="login-form-box">
-            Regretsy!
+            <a onClick={() => this.props.openModal("signin")}><h3 className="sessionTab">Sign In</h3></a>
+            <h2>Sign Up!</h2>
           <br />
             {this.renderErrors()}
             <div className="login-form">

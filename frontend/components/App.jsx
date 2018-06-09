@@ -11,10 +11,10 @@ import Modal from './modal/modal';
 
 const App = () => (
   <div>
-    <header className="header">
     <Modal/>
-    <Header/>
-    <SessionButtonContainer/>
+    <header className="main-header">
+      <Header/>
+      <SessionButtonContainer/>
     </header>
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />

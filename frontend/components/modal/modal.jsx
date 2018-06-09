@@ -11,7 +11,7 @@ function Modal({modal, closeModal, clearErrors}) {
   }
   let component;
   switch (modal) {
-    case 'login':
+    case 'signin':
       component = <LoginFormContainer />;
       break;
     case 'signup':

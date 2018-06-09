@@ -27,7 +27,7 @@ export default class SearchBar extends Component {
           onChange={this.onInputChange} />
 
         <span className="outer-search">
-          <button type='submit' className="search-button">Submit</button>
+          <button type='submit' className="search-button">Search</button>
         </span>
       </form>
     );

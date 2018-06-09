@@ -6,16 +6,12 @@ import SessionButtons from '../session_form/session_buttons';
 const Header = () => {
   
   return (
-    <header>
-    <nav>
-    <div>
-      <h1 className="logo">regrEtsy</h1>
+   <div className="left-header">
+      <div><h1 className="logo">regrEtsy</h1></div>
       <div className="searchbar">
-      <SearchBar/>
+        <SearchBar/>
       </div>
     </div>
-    </nav>
-    </header>
   );
 };
 

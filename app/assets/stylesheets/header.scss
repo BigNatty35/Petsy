@@ -1,44 +1,110 @@
-.header {
-  // display: flex;
+.main-header {
+  display: flex;
   flex-direction: row;
-//   display: block;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
 }
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
 
 .logo {
   color: #f45800;
-  float: left;
-  display: flex;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 43px;
+  font-size: 38px;
+  margin-left: 40px;
+
 }
 
-.login-signup {
-  float: right;
-  padding-top: 50px;
+.register {
+  // float: right;
+  // padding-top: 50px;
+  color: #f45800;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.register:hover {
+  // float: right;
+  // padding-top: 50px;
+  // color: #f45800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login {
+  // float: right;
+  // padding-top: 50px;
+  color: #f45800;
+  padding: 7px;
+  margin-right: 40px;
+  border: 1px solid #f45800;
+  border-radius: 3px;
+  font-size: 15px;
+  
+}
+
+.login:hover {
+  // float: right;
+  // padding-top: 50px;
+  // color: #f45800;
+  // text-decoration: underline;
+  cursor: pointer;
+  transition: 0.4s;
+  background: #ffdbc6;
 }
 
 .searchbar {
-  position: fixed; /* or absolute */
-  top: 10%;
-  left: 20%;
-  color: #f45800;
-  
+  // position: fixed; /* or absolute */
+  // top: 10%;
+  // left: 20%;
+  // color: #f45800;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid grey;
+  height: 34px;
+  margin-left: 20px;
+
 }
 .search-field {
-  width: 385px;
-  // height: 50px;
+  width: 337px;
   box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 15px;
+  vertical-align: 3px;
+
 }
 
-.outer-search {
-  height: 79px;
-}
+// .outer-search {
+//   height: 79px;
+// }
+
 .search-button {
   color: white;
-  background-color: #f45800
-  // border-radius: 30px
+  background-color: #f45800;
+  height: 23px;
+  line-height: 17px;
+  padding: 7px 15px 6px 15px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px; 
+  border-color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  position: relative;
+  right: -1px;
+  font-size: 15px;
+  
+  bottom: 1px;
+
 }
 
 
@@ -46,6 +112,7 @@
   float: right;
 }
 
+// modal styling
 .modal-background {
   position: fixed;
   top: 0;
@@ -73,6 +140,7 @@
  .login-form-container {
    display: flex;
    justify-content: center;
+   color: #444;
  }
 
  .login-form {
@@ -83,11 +151,23 @@
 
  .login-input {
    margin-left: 20px;
+   border: 1px solid black;
  }
 
+ 
  .login-form-box {
    outline: 1px solid black;
    padding: 20px;
    background: white;
    position: relative;
  }
+
+ .sessionTab {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  cursor: pointer;
+}
+
+.sessionTab:hover {
+  color: #f45800;
+}
