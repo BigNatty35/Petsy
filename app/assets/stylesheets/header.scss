@@ -86,10 +86,11 @@ hgroup span {
 }
 
 .login:hover {
-  // float: right;
-  // padding-top: 50px;
-  // color: #f45800;
-  // text-decoration: underline;
+  cursor: pointer;
+  transition: 0.4s;
+  background: #ffdbc6;
+}
+.header-button:hover {
   cursor: pointer;
   transition: 0.4s;
   background: #ffdbc6;
