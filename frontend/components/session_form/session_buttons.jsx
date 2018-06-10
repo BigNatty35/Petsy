@@ -10,7 +10,7 @@ const SessionButtons = ({ currentUser, logout, login, signup, openModal }) => {
       <button className="register" onClick={() => openModal('Register')}>Register</button>
       <button className="login" onClick={() => openModal('Sign In')}>Sign in</button>
       <div className="cart-sec">
-        <i class="fas fa-shopping-cart fa-lg"></i>
+        <i className="fas fa-shopping-cart fa-lg"></i>
         <span className="cart-text">Cart</span>
       </div>
     </nav>
@@ -19,7 +19,7 @@ const SessionButtons = ({ currentUser, logout, login, signup, openModal }) => {
     <hgroup className="right-header">
       <button className="header-button" onClick={logout}>Log Out</button>
       <div className="cart-sec">
-      <i class="fas fa-shopping-cart fa-lg"></i>
+      <i className="fas fa-shopping-cart fa-lg"></i>
       <span className="cart-text">Cart</span>
       </div>
     </hgroup>
