@@ -20,6 +20,7 @@ export default class SearchBar extends Component {
   render() {
     return (
       <form className="searchform" onSubmit={this.onFormSubmit} >
+      <div className="searchbox">
         <input
           placeholder="Search for items"
           className="search-field"
@@ -29,6 +30,7 @@ export default class SearchBar extends Component {
         <span className="outer-search">
           <button type='submit' className="search-button">Search</button>
         </span>
+        </div>
       </form>
     );
   }

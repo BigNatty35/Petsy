@@ -1,26 +1,58 @@
+body {
+  margin: 30px 85px 30px 85px;
+}
+
 .main-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .left-header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 40px;
 }
 
+.right-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+}
+
+hgroup span {
+  color: #666666;
+  font-size: 13px;
+  align-items: center;
+  
+
+}
+
+.cart-sec {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 27px;
+
+}
+
+.cart-text {
+  padding: 5px;
+  font-size: 16px;
+}
 
 
 .logo {
   color: #f45800;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 38px;
+  font-size: 49px;
   margin-left: 40px;
-
+  margin-right: 20px;
 }
 
 .register {
@@ -28,7 +60,8 @@
   // padding-top: 50px;
   color: #f45800;
   padding: 20px;
-  font-size: 15px;
+  font-size: 21px;
+  margin-right: 37px;
 }
 
 .register:hover {
@@ -40,14 +73,15 @@
 }
 
 .login {
-  // float: right;
-  // padding-top: 50px;
+
   color: #f45800;
-  padding: 7px;
+  padding: 8px;
   margin-right: 40px;
+  margin-top: 11px;
   border: 1px solid #f45800;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 19px;
+  height: 30px;
   
 }
 
@@ -62,15 +96,14 @@
 }
 
 .searchbar {
-  // position: fixed; /* or absolute */
-  // top: 10%;
-  // left: 20%;
-  // color: #f45800;
+
   border-radius: 4px;
   font-size: 12px;
   border: 1px solid grey;
   height: 34px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: row;
 
 }
 .search-field {
@@ -83,9 +116,10 @@
 
 }
 
-// .outer-search {
-//   height: 79px;
-// }
+.searchbox {
+  display: flex;
+  flex-direction: row;
+}
 
 .search-button {
   color: white;
@@ -101,18 +135,38 @@
   font-size: 18px;
   position: relative;
   right: -1px;
-  font-size: 15px;
-  
+  font-size: 18px;
   bottom: 1px;
-
+  display: flex;
+  flex-direction: row;
 }
 
 
 .header-button {
   float: right;
+  color: #f45800;
+  padding: 7px;
+  margin-right: 40px;
+  border: 1px solid #f45800;
+  border-radius: 3px;
+  font-size: 19px;
+  
 }
 
-// modal styling
+
+.fa-lg {
+    font-size: 2.33333em;
+    line-height: 1.75em;
+    vertical-align: -0.0667em;
+}
+
+.fa-shopping-cart {
+  color: #666666;
+  margin-right: 40px;
+
+}
+
+// modal styling *****************************************//
 .modal-background {
   position: fixed;
   top: 0;
@@ -137,37 +191,160 @@
    cursor: pointer;
  }
 
- .login-form-container {
+
+ .login-signup {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+
+ } 
+
+
+ .login-form-container { 
    display: flex;
    justify-content: center;
    color: #444;
+   text-align: left;
  }
 
  .login-form {
    display: flex;
    justify-content: center;
    flex-direction: column;
+   align-items: center;
+  
+   
  }
 
- .login-input {
+
+
+.session-submit {
+  background-color: #f45800;
+  padding: 7px 15px 8px;
+  border-radius: 3px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 22px;
+  text-align: center;
+ 
+  line-height: normal;
+  border-color: rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  width: 218px;
+}
+
+.searchform {
+  direction: flex;
+  flex-direction: row;
+}
+
+.demo-button {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 180px;
+  color: white;
+  background-color: grey;
+  height: 30px;
+}
+
+ .input-label {
+   font-size: 18px;
+
+ }
+
+ .form-label {
+   display: flex;
+   justify-content: center;
+ 
+ }
+
+
+ .input-field { // styles the input field for the sign in
+  display: flex;
+  flex-direction: column;
    margin-left: 20px;
    border: 1px solid black;
+   line-height: 16px;
+   color: #333;
+   font-size: 13px;
+   padding: 6px;
+   border: 1px solid #e6e6e6;
+   border-bottom: 1px solid #e6e6e6;
+  //  display: block;
+   margin: 0 0 0.2em 0;
+  width: 232px;  
+  height: 29px;
  }
 
  
  .login-form-box {
-   outline: 1px solid black;
-   padding: 20px;
+   padding: 100px;
    background: white;
    position: relative;
  }
 
- .sessionTab {
+
+
+.sessionTabButton1 {
+  position: relative;
+  bottom: -1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid lightgrey;
+  // border-bottom: none;
+  border-bottom-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  color: green;
   cursor: pointer;
+  font-size: 12;
+  color: #333
+}
+.sessionTabButton2 {
+  position: relative;
+  bottom: -1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid lightgrey;
+  // border-bottom: none;
+  border-bottom-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-size: 12;
+  color: #333
 }
 
-.sessionTab:hover {
-  color: #f45800;
+
+
+
+
+.sessionTabBox {
+  border-bottom: 1px solid lightgrey;
+  padding-left: 40px;
+  padding-top: 20px;
+  background-color: #F8FBF7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 20px;
+}
+
+
+
+
+.sessionTabButton1:hover {
+  text-decoration: underline;
+}
+.sessionTabButton2:hover { 
+  text-decoration: underline;
 }
