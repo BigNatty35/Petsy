@@ -4,8 +4,11 @@ import * as ApiUtil from "./util/session_api_util";
 import configureStore from "./store/store";
 import Root from './components/root';
 import {signup, login} from './actions/session_actions';
-import {fetchProducts} from "./actions/product_actions";
-import {receiveProducts} from "./util/product_api_util";
+import {fetchProducts, fetchProduct} from "./actions/product_actions";
+import { receiveProducts, receiveProduct } from "./util/product_api_util";
+import { fetchCategory, receiveCategory} from "./actions/category_actions";
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // const store = configureStore();
     
@@ -22,8 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         store = configureStore();
     }
+    window.fetchCategory = fetchCategory;
+    window.receiveCategory = receiveCategory;
     window.fetchProducts = fetchProducts;
     window.receiveProducts = receiveProducts;
+    window.fetchProduct = fetchProduct;
+    window.receiveProduct = receiveProduct;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     window.login = login;

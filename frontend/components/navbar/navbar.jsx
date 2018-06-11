@@ -9,7 +9,7 @@ const  Navbar = () => {
         <li>Pets</li>
         <li>Food</li>
         <li>Clothes</li>
-        <li>Jewelery</li>
+        <li>Jewelry</li>
         <li>Vehicles</li>
         <li>Household</li>
         <li>Electronics</li>
