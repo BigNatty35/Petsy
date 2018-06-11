@@ -55,9 +55,7 @@ class SessionForm extends React.Component {
       return (
         <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-            {/* <div className="form-label"><h2>Sign In</h2></div> */}
-          {/* <a onClick={() => this.props.openModal("Register")}> <h3 className="sessionTab">Register</h3></a> */}
-          {/* <div className="form-label"><h2>Sign In</h2></div> */}
+            <div className="form-label"><h2>Sign In</h2></div>
           <br />
           <div className="login-form">
             <br />

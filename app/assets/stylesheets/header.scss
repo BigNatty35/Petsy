@@ -7,7 +7,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
 }
 
 .left-header {
@@ -36,13 +35,15 @@ hgroup span {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  font-size: 27px;
-
+  font-size: 21px;
+  margin-top: 6px;
 }
 
 .cart-text {
   padding: 5px;
-  font-size: 16px;
+  font-size: 13px;
+  margin-left: 2px;
+  color: #666666
 }
 
 
@@ -50,8 +51,7 @@ hgroup span {
   color: #f45800;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: 49px;
-  margin-left: 40px;
+  font-size: 39px;
   margin-right: 20px;
 }
 
@@ -59,9 +59,9 @@ hgroup span {
   // float: right;
   // padding-top: 50px;
   color: #f45800;
-  padding: 20px;
-  font-size: 21px;
-  margin-right: 37px;
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 19px;
 }
 
 .register:hover {
@@ -76,12 +76,12 @@ hgroup span {
 
   color: #f45800;
   padding: 8px;
-  margin-right: 40px;
-  margin-top: 11px;
+  margin-right: 27px;
+  margin-top: 18px;
   border: 1px solid #f45800;
   border-radius: 3px;
-  font-size: 19px;
-  height: 30px;
+  font-size: 17px;
+  height: 22px;
   
 }
 
@@ -150,7 +150,7 @@ hgroup span {
   margin-right: 40px;
   border: 1px solid #f45800;
   border-radius: 3px;
-  font-size: 19px;
+  font-size: 17px;
   
 }
 
@@ -194,7 +194,7 @@ hgroup span {
 
 
  .login-signup {
-  margin-right: 40px;
+  
   display: flex;
   flex-direction: row;
 
@@ -226,7 +226,7 @@ hgroup span {
   color: white;
   border-style: solid;
   border-width: 1px;
-  font-size: 22px;
+  font-size: 17px;
   text-align: center;
  
   line-height: normal;
@@ -245,7 +245,7 @@ hgroup span {
   border-style: solid;
   border-width: 1px;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 20px;
   width: 180px;
   color: white;
@@ -337,7 +337,7 @@ hgroup span {
   background-color: #F8FBF7;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 

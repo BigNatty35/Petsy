@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  display: inline;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #666666;
+  border: 1px solid #666666;
+  margin-top: 25px;
+  padding: 7px;
+  
+}
+.nav-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.nav-list li:hover {
+  text-decoration: underline;
+  text-decoration-color: #f45800;
+  cursor: pointer;
+}

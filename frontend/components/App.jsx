@@ -8,6 +8,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import {Route, HashRouter, Switch} from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './modal/modal';
+import Navbar from './navbar/navbar';
 
 const App = () => (
   <div>
@@ -15,7 +16,9 @@ const App = () => (
     <header className="main-header">
       <Header/>
       <SessionButtonContainer/>
+
     </header>
+    <Navbar/>
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
