@@ -22,4 +22,3 @@ export const logout = () => {
   });
 };
 
-// user = {user: {username: "test", password: "password", email: "hahahasdfasd"}}

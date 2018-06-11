@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+class Api::ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
@@ -9,13 +9,18 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
     render "api/products/show"
   end
 
   def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    render "api/products/show"
   end
 
   def index
+    render "api/products/index"
   end
 
   private
