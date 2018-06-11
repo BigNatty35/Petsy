@@ -82,7 +82,7 @@ hgroup span {
   border-radius: 3px;
   font-size: 17px;
   height: 22px;
-  
+  min-width: 60px
 }
 
 .login:hover {
@@ -151,8 +151,10 @@ hgroup span {
   border: 1px solid #f45800;
   border-radius: 3px;
   font-size: 17px;
-  
+  min-width: 61px;
+  margin-left: 20px;
 }
+
 
 
 .fa-lg {
@@ -213,10 +215,14 @@ hgroup span {
    justify-content: center;
    flex-direction: column;
    align-items: center;
-  
    
  }
 
+ .formType {
+   color: #f45800;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 27px;
+ }
 
 
 .session-submit {
@@ -228,7 +234,7 @@ hgroup span {
   border-width: 1px;
   font-size: 17px;
   text-align: center;
- 
+  margin-top: 10px;
   line-height: normal;
   border-color: rgba(0, 0, 0, 0.1);
   align-items: flex-start;
@@ -238,6 +244,10 @@ hgroup span {
 .searchform {
   direction: flex;
   flex-direction: row;
+}
+
+.errors {
+  color: rgba(206, 0, 0, 0.582);
 }
 
 .demo-button {
@@ -285,8 +295,12 @@ hgroup span {
  
  .login-form-box {
    padding: 100px;
+   padding-top: 39px;
+   padding-bottom: 160px;
    background: white;
    position: relative;
+   width: 250px;
+   height: 336px;
  }
 
 
