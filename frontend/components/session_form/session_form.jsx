@@ -23,12 +23,12 @@ class SessionForm extends React.Component {
 
   handleDemoSubmit(e) {
     e.preventDefault();
-    this.props.processForm({ username: "carey1", password: "password" }).then(this.props.closeModal());
+    this.props.processForm({ username: "carey2", password: "password" }).then(this.props.closeModal());
   }
 
   handleDemoSignupSubmit(e) {
     e.preventDefault();
-    this.props.demoForm({ username: "carey1", password: "password" }).then(this.props.closeModal());
+    this.props.demoForm({ username: "carey2", password: "password" }).then(this.props.closeModal());
   }
 
   handleSubmit(e) {
