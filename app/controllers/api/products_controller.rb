@@ -20,6 +20,7 @@ class Api::ProductsController < ApplicationController
   end
 
   def index
+    @products = Product.all 
     render "api/products/index"
   end
 
