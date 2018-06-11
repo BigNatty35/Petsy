@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.delete_all
 
-User.create(username: "carey2", email: "email2",  password: "password");
+User.create(username: "carey1", email: "email1",  password: "password");
 User.create(username: Faker::Internet.user_name, email: Faker::Internet.email,  password: "password");
 User.create(username: Faker::Internet.user_name, email: Faker::Internet.email,  password: "password");
 User.create(username: Faker::Internet.user_name, email: Faker::Internet.email,  password: "password");
