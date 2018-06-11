@@ -26,5 +26,6 @@
 .nav-list li:hover {
   text-decoration: underline;
   text-decoration-color: #f45800;
+  transition: 0.3s;
   cursor: pointer;
 }
