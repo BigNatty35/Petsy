@@ -57,6 +57,7 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit} className="login-form-box">
             <div className="form-label"><h2 className="formType">Sign In</h2></div>
           <br />
+            {this.renderErrors()}
           <div className="login-form">
             <br />
             <div className="texbox">
@@ -78,8 +79,7 @@ class SessionForm extends React.Component {
             </label>
             <br />
             <input onClick={this.handleSubmit} className="login-button"className="session-submit" type="submit" value={this.props.formType} />
-            <input onClick={this.handleDemoSubmit} className="demo-button" type="submit" value={"DEMO"} />
-            {this.renderErrors()}
+            <input onClick={this.handleDemoSubmit} className="demo-button" type="submit" value={"DEMO"} />  
           </div>
       
         </form>
