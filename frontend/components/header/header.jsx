@@ -7,7 +7,7 @@ const Header = () => {
   
   return (
    <div className="left-header">
-      <div><h1 className="logo">regrEtsy</h1></div>
+      <Link to='/'> <div><h1 className="logo">regrEtsy</h1></div></Link>
       <div className="searchbar">
         <SearchBar/>
       </div>
