@@ -25,7 +25,7 @@ class ProductDetail extends React.Component {
 
       console.log("bunny");
       return (
-        <div>
+        <div className="listing-body">
       <div className="product-show">
         <ul className="product-list">
           <li>
