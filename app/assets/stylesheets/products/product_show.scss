@@ -1,18 +1,19 @@
 
 .listing-body {
-  border: 1px solid red;
-  margin-top: 30px;
+  // border: 1px solid red;
+  margin-top: 120px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 30px;
   min-width: 900px;
+  box-shadow: 0px 0px 5px grey;
 }
 
 .show-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid purple;
+  // border: 1px solid purple;
 }
 
 .product-show {
@@ -23,28 +24,21 @@
 
 
 .cart-button {
-  // border: 1px solid red;
-  // padding: 8px;
-  // width: 191px;
-  // text-align: center;
-  // border-radius: 3px;
-  // background: #f45800;
-  // color: white;
-  // font-weight: 400;
-  // margin-top: 141px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 15px;
-    height: 35px;
-    width: 400px;
-    background-color: #F45800;
-    color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 21px;
+  height: 35px;
+  width: 400px;
+  background-color: #F45800;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .rightside-buttons {
-  border: 1px solid green;
+  // border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -76,8 +70,16 @@
 
 .rightside-show {
   width: 50%;
-  padding: 10px;
+  padding: 30px;
 }
+
+.rightside-show h1 {
+  font-size: 27px;
+  font-weight: 500px;
+  padding-top: 29px;
+  margin-left: 9px;
+}
+
 
 .nav-user {
   font-size: 20px
@@ -93,9 +95,9 @@
 
 
 .leftside-show {
-  border: 1px solid green;
+  // border: 1px solid green;
   width: 50%;
-  padding: 10px;
+  padding: 30px;
 }
 
 .product-description {
@@ -113,14 +115,16 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-left: 10px;
-  height: 100px;
+  height: 125px;
   position: relative;
   padding-bottom: 20px;
 }
 
 .product-cost {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 23px;
+  font-weight: 500px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }
 
 .shopping-cart-form .cart-quantity input {
