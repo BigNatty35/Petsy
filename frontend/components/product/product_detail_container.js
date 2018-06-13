@@ -5,9 +5,10 @@ import {fetchProduct} from '../../actions/product_actions';
 
 
 const msp = (state, ownProps) => {
+  const currentProduct = state.entities.products[ownProps.match.params.product_id];
   return {
-    product: state.entities.products[ownProps.match.params.product_id]
-
+    product: currentProduct
+    // user: state.entities.users[currentProduct.user_id]
   };
 };
 
@@ -16,6 +17,7 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
   return {
     fetchProduct: id => dispatch(fetchProduct(id))
+
   };
 };
 

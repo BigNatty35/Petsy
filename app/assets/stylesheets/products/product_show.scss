@@ -1,0 +1,132 @@
+
+.listing-body {
+  border: 1px solid red;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  min-width: 900px;
+}
+
+.show-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid purple;
+}
+
+.product-show {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.cart-button {
+  // border: 1px solid red;
+  // padding: 8px;
+  // width: 191px;
+  // text-align: center;
+  // border-radius: 3px;
+  // background: #f45800;
+  // color: white;
+  // font-weight: 400;
+  // margin-top: 141px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    height: 35px;
+    width: 400px;
+    background-color: #F45800;
+    color: white;
+}
+
+.rightside-buttons {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quantity-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  border: 1px solid black;
+  line-height: 16px;
+  color: #333;
+  font-size: 17px;
+  padding: 6px;
+  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 0 0.2em 0;
+  width: 46px;
+  height: 9px;
+}
+
+
+.input-box {
+  padding-bottom: -73px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.rightside-show {
+  width: 50%;
+  padding: 10px;
+}
+
+.nav-user {
+  font-size: 20px
+}
+
+
+
+
+
+.leftside-show {
+  border: 1px solid green;
+  width: 50%;
+  padding: 10px;
+}
+
+.product-description {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+
+
+
+.shopping-cart-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 10px;
+  height: 100px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.product-cost {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shopping-cart-form .cart-quantity input {
+  text-align: right;
+  margin-left: 5px;
+  width: 35px;
+};
+
+.shopping-cart-form .cart-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+

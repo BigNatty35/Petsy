@@ -23,32 +23,43 @@ class ProductDetail extends React.Component {
       return (<div>Hello</div>);
     } else {
 
-      console.log("bunny");
       return (
-        <div className="listing-body">
+    <div className="listing-body">
+      <nav className="show-nav">
+         <a href="#" className="nav-user">{this.props.product.username}</a>
+      </nav>
       <div className="product-show">
-        <ul className="product-list">
-          <li>
-            <span>{this.props.product.title}</span>
-          </li>
-          <li>
-            <span>{this.props.product.description}</span>
-          </li>
-          <li>
-            
-          </li>
-        </ul>
+        <div className="leftside-show">
+          <span className="image"><h1>PRODUCT IMAGE</h1></span>
+          <div className="product-description"> 
+            <h2>Description</h2>
+            <span className="description">{this.props.product.description}</span>
+          </div>
         </div>
+      
         <div className="rightside-show">
-          <span>{this.props.product.price}</span>
-          <label className="cart-quantity">Quantity:</label>
-          <input onChange={this.handleQuant.bind(this)} id="quantity" type="number" min="1" step="1" value={this.state.value}/>
-          <button className="cart-button">Add to cart</button>
-        </div>
+            <h1>{this.props.product.title}</h1>
+          <div>
+            <div>
+              <form action="" className="shopping-cart-form">
+              <div className="product-cost">
+                ${this.props.product.price}
+              </div>
+                <div>
+                  <label className="cart-quantity">Quantity:
+                    <input className="quantity-field" onChange={this.handleQuant.bind(this)} type="number" min="1" step="1" value={this.state.value}/>
+                  </label>
+                </div>
+                  <input type="submit" className="cart-button" value="Add to Cart"/>
+              </form>
+              </div>
+          </div>
+       </div>
       </div>
-    );
+    </div>
+      );
+    }
   }
-}
 }
 
 
