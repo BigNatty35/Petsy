@@ -30,7 +30,7 @@ class ProductDetail extends React.Component {
       </nav>
       <div className="product-show">
         <div className="leftside-show">
-          <span className="image"><h1>PRODUCT IMAGE</h1></span>
+          <span className="image"><img src={this.props.product.img_url} alt=""/></span>
           <div className="product-description"> 
             <h2>Description</h2>
             <span className="description">{this.props.product.description}</span>
