@@ -11,6 +11,8 @@ import Modal from './modal/modal';
 import Navbar from './navbar/navbar';
 import ProductIndexContainer from './product/product_index_containter';
 import ProductDetailContainer from './product/product_detail_container';
+import CartShowContainer from './cart_items/cart_show_container';
+
 const App = () => (
   <div>
     <Modal/>
@@ -24,6 +26,7 @@ const App = () => (
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
+      <Route exact path="/cart" component={CartShowContainer}/>
       <Route exact path="/" component={ProductIndexContainer} />
       <Route path='/product/:product_id' component={ProductDetailContainer}/>
     </Switch>

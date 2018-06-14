@@ -3,8 +3,10 @@ class Api::CartItemsController < ApplicationController
   before_action :require_logged_in
   
   def create 
+    @current_user = current_user
+    
     @cart_item = CartItem.new(cart_item_params)
-    @cart_item.user_id = currentUser.id 
+    # @cart_item.user_id = @current_user.id 
     if @cart_item.save
       render "api/cart_items/show"
     else
@@ -32,6 +34,6 @@ class Api::CartItemsController < ApplicationController
   private
 
   def cart_item_params
-    params.require(:cart_item).permit(:product_id, :product_img, :quantity)
+    params.require(:item).permit(:product_id, :product_img, :quantity, :user_id)
   end
 end

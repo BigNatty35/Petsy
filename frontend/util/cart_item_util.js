@@ -5,11 +5,11 @@ export const fetchCartItems = () => {
   });
 };
 
-export const createCartItem = (cartItem) => {
+export const createCartItem = (item) => {
   return $.ajax({
     method: "POST",
     url: '/api/cart_items',
-    data: { cartItem }
+    data: { item }
   });
 };
 

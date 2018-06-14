@@ -1,9 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class ProductDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: 1};
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
  
   componentDidMount() {
@@ -15,6 +17,17 @@ class ProductDetail extends React.Component {
   handleQuant(e) {
     e.preventDefault();
     this.setState({value: e.target.value});
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const cartItem = {
+      product_id: this.props.product.id,
+      quantity: this.state.value,
+      product_img: this.props.product.img_url,
+      user_id: this.props.userId
+     };
+    this.props.createCartItem(cartItem);
   }
 
   render() {
@@ -41,7 +54,7 @@ class ProductDetail extends React.Component {
             <h1>{this.props.product.title}</h1>
           <div>
             <div>
-              <form action="" className="shopping-cart-form">
+              <form onSubmit={this.handleSubmit} className="shopping-cart-form">
               <div className="product-cost">
                 ${this.props.product.price}
               </div>
