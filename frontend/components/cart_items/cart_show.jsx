@@ -13,18 +13,14 @@ class CartShow extends React.Component {
   }
 
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.cartItems.length != nextProps.match.params.postId) {
-  //     this.props.fetchPost(nextProps.match.params.postId);
-  //   }
-  // }
+
 
   render() {
     
     // if (typeof this.props.cartItems === 'undefined') {
     //   return (<div>Hello</div>);
     // } else {
-
+    // debugger
     return (
       <div className="cartItems-box">
         <div>

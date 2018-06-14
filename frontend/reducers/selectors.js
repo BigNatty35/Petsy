@@ -26,3 +26,13 @@
 // };
 
 
+// export const itemExists (cartItems, currentProduct) => {
+//   let result = cartItems
+//   for (let id in cartItems) {
+//     if (cartItems[id].product_id === currentProduct.id) {
+//       return cartItems;
+//     } else {
+
+//     }
+//   }
+// }

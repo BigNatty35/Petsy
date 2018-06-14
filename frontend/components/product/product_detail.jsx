@@ -27,9 +27,22 @@ class ProductDetail extends React.Component {
       product_img: this.props.product.img_url,
       user_id: this.props.userId
      };
-    this.props.createCartItem(cartItem);
-    this.props.history.push('/cart')
+    this.props.createCartItem(cartItem).then(() =>
+    this.props.history.push('/cart'));
   }
+
+  renderErrors() {
+    return (
+      <ul className="errors">
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
 
   render() {
 
@@ -65,6 +78,7 @@ class ProductDetail extends React.Component {
                   </label>
                 </div>
                   <input type="submit" className="cart-button" value="Add to Cart"/>
+                  {this.renderErrors()}
               </form>
               </div>
           </div>

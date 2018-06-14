@@ -9,7 +9,8 @@ const msp = (state, ownProps) => {
   return {
     product: currentProduct,
     // user: state.entities.users[currentProduct.user_id]
-    userId: state.session.id
+    userId: state.session.id,
+    errors: state.errors.cart
   };
 };
 
