@@ -1,7 +1,8 @@
 import React from 'react';
+// import { deleteCartItem } from '../../util/cart_item_util';
 
 
-export const CartItem = ({cartItem}) => {
+export const CartItem = ({cartItem, deleteCartItem}) => {
   return (
     <div className="cartItem-info">
       <div>
@@ -10,7 +11,7 @@ export const CartItem = ({cartItem}) => {
         {cartItem.price}
           <div className="cart-image">
             <img src={cartItem.product_img} alt=""/>
-          <button>Remove Item</button>
+          <button onClick={() => deleteCartItem(cartItem.id)}>Remove Item</button>
           </div>
       </div>
     </div>

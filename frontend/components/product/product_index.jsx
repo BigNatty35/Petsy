@@ -12,9 +12,12 @@ class ProductIndex extends React.Component {
   componentDidMount() {
     this.props.fetchProducts();
   }
+
+  
   render() {
     
     return (
+      <div className="list-body">
       <div className="list-box">
         <ul className="items-list">
         <li className="index-items">
@@ -22,7 +25,7 @@ class ProductIndex extends React.Component {
         )}
         </li>
       </ul>
-
+      </div>
       
       </div>
     );

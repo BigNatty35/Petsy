@@ -21,7 +21,8 @@ class Api::CartItemsController < ApplicationController
 
   
   def index
-    @cart_items = CartItem.all
+    @current_user = current_user
+    @cart_items = @current_user.cart_items
     render "api/cart_items/index"
   end
 

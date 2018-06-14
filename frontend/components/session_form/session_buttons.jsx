@@ -3,8 +3,9 @@ import React from 'react';
 import { Link} from 'react-router-dom';
 
 
-const SessionButtons = ({ currentUser, logout, login, signup, openModal, history }) => {
+const SessionButtons = ({ fetchCartItems, currentUser, logout, login, signup, openModal, history }) => {
   
+
   const goHome = () => {
     return (
       history.push('/')

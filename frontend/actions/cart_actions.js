@@ -18,10 +18,10 @@ export const receiveCartItem = (cartItem) => {
   };
 };
 
-export const removeCartItem = (itemId) => {
+export const removeCartItem = (item) => {
   return {
     type: REMOVE_CART_ITEM,
-    itemId
+    itemId: item.id
   };
 };
 

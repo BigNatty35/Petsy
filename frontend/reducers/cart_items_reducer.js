@@ -11,7 +11,6 @@ const cartItemsReducer = (state = {}, action) => {
     case RECEIVE_CART_ITEMS:
       return merge({}, state, action.cartItems);
     case RECEIVE_CART_ITEM:
-    // debugger
       return merge({}, state, {[action.cartItem.id]: action.cartItem});
     case REMOVE_CART_ITEM:
     const newState = merge({}, state);

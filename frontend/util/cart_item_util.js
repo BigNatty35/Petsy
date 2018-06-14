@@ -5,6 +5,8 @@ export const fetchCartItems = () => {
   });
 };
 
+
+
 export const createCartItem = (item) => {
   return $.ajax({
     method: "POST",
