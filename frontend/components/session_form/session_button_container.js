@@ -4,7 +4,7 @@ import {openModal, closeModal} from '../../actions/modal_actions';
 import { logout } from '../../actions/session_actions';
 import SessionButtons from './session_buttons';
 import modalReducer from '../../reducers/modal_reducer';
-
+import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = ({ session, entities: { users } }) => {
   return {
@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => ({
   closeModal: () => dispatch(closeModal())
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(SessionButtons);
+)(SessionButtons));

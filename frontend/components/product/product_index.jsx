@@ -16,11 +16,14 @@ class ProductIndex extends React.Component {
     
     return (
       <div className="list-box">
-      <div></div>
-      <div><ul className="items-list">
+        <ul className="items-list">
+        <li className="index-items">
         {this.props.products.map(product => <ProductIndexItem product={product} key={product.id}/>
         )}
-      </ul></div>
+        </li>
+      </ul>
+
+      
       </div>
     );
   }

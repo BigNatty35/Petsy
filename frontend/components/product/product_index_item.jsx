@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 
 export const ProductIndexItem = ({product}) => {
   return (
-    <div className="list-item">
+    <ul className="list-item">
       <li>
-        <Link to={`/product/${product.id}`}>{product.title}</Link>
+        <div className="index-img">
+        <Link to={`/product/${product.id}`}><img src={product.img_url} alt=""/></Link>
+        </div>
         <span>{product.price}</span>
       </li>
-    </div>
+    </ul>
   );
 };
 

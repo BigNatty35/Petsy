@@ -3,14 +3,16 @@ import React from 'react';
 
 export const CartItem = ({cartItem}) => {
   return (
-    <div>
-      <li>
+    <div className="cartItem-info">
+      <div>
         {cartItem.product_name}
-        <br/>
         {cartItem.quantity}
-        <br/>
         {cartItem.price}
-      </li>
+          <div className="cart-image">
+            <img src={cartItem.product_img} alt=""/>
+          <button>Remove Item</button>
+          </div>
+      </div>
     </div>
   );
 };

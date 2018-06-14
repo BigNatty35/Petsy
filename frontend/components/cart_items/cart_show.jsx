@@ -14,12 +14,14 @@ class CartShow extends React.Component {
   render() {
     
     return (
-      <div>
-        <ul>
-        {this.props.cartItems.map(cartItem => {
-          return <CartItem cartItem={cartItem} key={cartItem.id}/>;
-        })}
-        </ul>
+      <div className="cartItems-box">
+        <div>
+          <ul>
+          {this.props.cartItems.map(cartItem => {
+            return <CartItem cartItem={cartItem} key={cartItem.id}/>;
+          })}
+          </ul>
+        </div>
       </div>
     );
   }

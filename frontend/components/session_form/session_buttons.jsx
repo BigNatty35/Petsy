@@ -1,25 +1,31 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
-const SessionButtons = ({ currentUser, logout, login, signup, openModal }) => {
+const SessionButtons = ({ currentUser, logout, login, signup, openModal, history }) => {
   
+  const goHome = () => {
+    return (
+      history.push('/')
+    );
+  };
+
   const loggedOutButtons = () => (
     <nav className="login-signup">
       <button className="register" onClick={() => openModal('Register')}>Register</button>
       <button className="login" onClick={() => openModal('Sign In')}>Sign in</button>
       <div className="cart-sec">
-        <i className="fas fa-shopping-cart fa-lg"></i>
+        <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i></Link>
         <span className="cart-text">Cart</span>
       </div>
     </nav>
   );
   const loggedInButtons = () => (
     <hgroup className="right-header">
-      <button className="header-button" onClick={logout}>Log Out</button>
+      <button className="header-button" onClick={() => {logout(); goHome();}}>Log Out</button>
       <div className="cart-sec">
-      <i className="fas fa-shopping-cart fa-lg"></i>
+      <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i></Link>
       <span className="cart-text">Cart</span>
       </div>
     </hgroup>

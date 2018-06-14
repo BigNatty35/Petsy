@@ -2,7 +2,7 @@ import ProductDetail from './product_detail';
 import {connect} from 'react-redux';
 import {fetchProduct} from '../../actions/product_actions';
 import {createCartItem} from '../../actions/cart_actions';
-
+import {withRouter} from 'react-router-dom';
 
 const msp = (state, ownProps) => {
   const currentProduct = state.entities.products[ownProps.match.params.product_id];
@@ -25,4 +25,4 @@ const mdp = dispatch => {
 
 
 
-export default connect(msp, mdp)(ProductDetail);
+export default withRouter(connect(msp, mdp)(ProductDetail));

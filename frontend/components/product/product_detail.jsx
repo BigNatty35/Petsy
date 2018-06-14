@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 
 class ProductDetail extends React.Component {
   constructor(props) {
@@ -28,6 +28,7 @@ class ProductDetail extends React.Component {
       user_id: this.props.userId
      };
     this.props.createCartItem(cartItem);
+    this.props.history.push('/cart')
   }
 
   render() {
