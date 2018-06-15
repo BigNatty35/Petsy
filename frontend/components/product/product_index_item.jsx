@@ -6,9 +6,12 @@ export const ProductIndexItem = ({product}) => {
     <ul className="list-item">
       <li>
         <div className="index-img">
-        <Link to={`/product/${product.id}`}><img src={product.img_url} alt=""/></Link>
+        <Link to={`/product/${product.id}`}><img className="indexItem-img"src={product.img_url} alt=""/></Link>
+        <div className="item-info">
+        <span>{product.title}</span>
+        <span>${product.price}</span>
         </div>
-        <span>{product.price}</span>
+        </div>
       </li>
     </ul>
   );

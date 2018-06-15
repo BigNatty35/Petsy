@@ -5,13 +5,21 @@ import React from 'react';
 export const CartItem = ({cartItem, deleteCartItem}) => {
   return (
     <div className="cartItem-info">
-      <div>
-        {cartItem.product_name}
-        {cartItem.quantity}
+      <div className="item-box">
+        <div>
+          {cartItem.product_name}
+        </div>
+        <div>
+          {cartItem.quantity}
+        </div>
+        <div>
         {cartItem.price}
-          <div className="cart-image">
-            <img src={cartItem.product_img} alt=""/>
-          <button onClick={() => deleteCartItem(cartItem.id)}>Remove Item</button>
+        </div>
+          <div className="img-box">
+            <div className="cart-image">
+              <img src={cartItem.product_img} alt=""/>
+            <button className="remove-item"onClick={() => deleteCartItem(cartItem.id)}>Remove Item</button>
+            </div>
           </div>
       </div>
     </div>
@@ -20,3 +28,6 @@ export const CartItem = ({cartItem, deleteCartItem}) => {
 
 
 
+const total = items => {
+  return 
+}

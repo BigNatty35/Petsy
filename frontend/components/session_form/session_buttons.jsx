@@ -24,6 +24,10 @@ const SessionButtons = ({ fetchCartItems, currentUser, logout, login, signup, op
   );
   const loggedInButtons = () => (
     <hgroup className="right-header">
+      <div className='cart-sec'>
+      <Link to='/'><i className="fas fa-home fa-lg"></i></Link>
+      <span className="home-text">Home</span>
+      </div>
       <button className="header-button" onClick={() => {logout(); goHome();}}>Log Out</button>
       <div className="cart-sec">
       <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i></Link>
