@@ -21,10 +21,12 @@ user9 = User.create(username: "Bellymonster", email: "email9",  password: "passw
 user10 = User.create(username: "fishmountian", email: "email10",  password: "password");
 user11 = User.create(username: "greatuser", email: "email11",  password: "password");
 
+cat1 = Category.create(category_name: "car")
+cat2 = Category.create(category_name: "clothes")
+cat3 = Category.create(category_name: "pets")
 
-
-Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/gasguzzler.jpg", description: "See you at the gas station", title: "Gas Guzzler", price: 48.99, category_id: 3)
-Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshoes.jpg", description: "If Comfort and Style had a baby", title: "Great Shoes", price: 18.33, category_id: 2)
-Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/martini-glass-hat1.jpg", description: "Extremely rare head piece.", title: "Rare Hat", price: 37.99, category_id: 1)
-Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/pirhana.jpg", description: "Agressive and Hungry.", title: "Pirhana", price: 52.99, category_id: 3)
-Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: 1)
+Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/gasguzzler.jpg", description: "See you at the gas station", title: "Gas Guzzler", price: 48.99, category_id: cat1.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshoes.jpg", description: "If Comfort and Style had a baby", title: "Great Shoes", price: 18.33, category_id: cat2.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/martini-glass-hat1.jpg", description: "Extremely rare head piece.", title: "Rare Hat", price: 37.99, category_id: cat2.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/pirhana.jpg", description: "Agressive and Hungry.", title: "Pirhana", price: 52.99, category_id: cat1.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat3.id)
