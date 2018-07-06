@@ -4,8 +4,6 @@ import {getFilteredItems} from '../../reducers/selectors';
 import { fetchCartItems, deleteCartItem} from '../../actions/cart_actions';
 
 
-
-
 const msp = (state, ownProps) => {
   
   return {
