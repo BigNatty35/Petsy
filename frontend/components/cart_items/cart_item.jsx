@@ -13,15 +13,8 @@ class CartItem extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const item = {
-      product_id: this.props.cartItem.product_id,
-      quantity: this.state.quantity,
-      product_img: this.props.cartItem.img_url,
-      price: this.props.cartItem.price,
-      product_name: this.props.cartItem.product_name,
-      user_id: this.props.cartItem.userId,
-      id: this.props.cartItem.id
-    };
+    this.props.cartItem.quantity = this.state.quantity;
+    let item = this.props.cartItem;
     this.props.updateCartItem(item);
   }
 
@@ -38,11 +31,8 @@ class CartItem extends React.Component {
           {this.props.cartItem.product_name}
         </div>
         <div>
-          {this.props.cartItem.quantity}
-        </div>
-        <div>
         {(this.props.cartItem.quantity * this.props.cartItem.price).toFixed(2)} is your total
-        @({this.props.cartItem.price}(each))
+        @{this.props.cartItem.price}(each)
         </div>
           <div className="img-box">
             <div className="cart-image">
