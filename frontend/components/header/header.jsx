@@ -15,7 +15,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="left-header">
-        <div><h1 onClick={(e) => { this.goHome(); dispatch(clearErrors())}} className="logo">regrEtsy</h1></div>
+        <div><h1 onClick={(e) => { this.goHome(); dispatch(clearErrors())}} className="logo">RegrEtsy</h1></div>
         <div className="searchbar">
           <SearchBar/>
         </div>

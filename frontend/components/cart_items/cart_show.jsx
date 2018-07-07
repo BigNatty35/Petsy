@@ -1,5 +1,5 @@
 import React from 'react';
-import {CartItem} from './cart_item';
+import CartItem from './cart_item';
 
 
 class CartShow extends React.Component {
@@ -10,32 +10,16 @@ class CartShow extends React.Component {
       total: 0
     };
 
-    // this.calculateTotal = this.calculateTotal.bind(this);
-    // this.updateTotal = this.updateTotal.bind(this);
+ 
   }
 
   componentDidMount() {
    
     this.props.fetchCartItems();
-    // this.calculateTotal()
+   
 
   }
 
-
-  // calculateTotal() {
-  //  const totals = this.props.cartItems.map(cartItem => {
-  //    console.log(cartItem.price);
-  //     return cartItem.price * cartItem.quantity;
-      
-  //   });
-  //   const reducer = (acc, currentValue) => acc + currentValue;
-  //   let total = totals.reduce(reducer);
-  //   return total;
-  // }
-
-  // updateTotal() {
-  //   this.setState({total: this.calculateTotal()});
-  // }
   
   render() {
       let totalSum = 0;
@@ -47,7 +31,7 @@ class CartShow extends React.Component {
         <div className="header-box">
         <header className="cart-header">
         <h1>{this.props.cartItems.length} item(s) in your cart</h1>
-        <h1>${totalSum} is your total </h1>
+        <h1>${totalSum.toFixed(2)} is your total </h1>
       
         
         </header>
@@ -55,7 +39,7 @@ class CartShow extends React.Component {
           <ul className='cartItems-list'>
           {this.props.cartItems.map(cartItem => {
             return <CartItem cartItem={cartItem} key={cartItem.id}
-            deleteCartItem={this.props.deleteCartItem}/>;
+            deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}/>;
           })}
           </ul>
             

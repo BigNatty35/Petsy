@@ -31,3 +31,11 @@ export const deleteCartItem = (id) => {
     url: `/api/cart_items/${id}`
   });
 };
+
+export const updateCartItem = (item) => {
+  return $.ajax({
+    method: "PATCH", 
+    url: `/api/cart_items/${item.id}`,
+    data: {item}
+  });
+};

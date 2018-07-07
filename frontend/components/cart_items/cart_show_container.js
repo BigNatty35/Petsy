@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import CartShow from './cart_show';
 import {getFilteredItems} from '../../reducers/selectors';
-import { fetchCartItems, deleteCartItem} from '../../actions/cart_actions';
+import { fetchCartItems, deleteCartItem, updateCartItem} from '../../actions/cart_actions';
 
 
 const msp = (state, ownProps) => {
@@ -17,7 +17,8 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
   return {
     fetchCartItems: () => dispatch(fetchCartItems()),
-    deleteCartItem: id => dispatch(deleteCartItem(id))
+    deleteCartItem: id => dispatch(deleteCartItem(id)),
+    updateCartItem: (item) => dispatch(updateCartItem(item))
 
   };
 };

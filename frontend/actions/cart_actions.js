@@ -2,7 +2,8 @@ import * as CartUtil from "../util/cart_item_util";
 export const RECEIVE_CART_ITEMS = "RECEIVE_CART_ITEMS";
 export const RECEIVE_CART_ITEM = "RECEIVE_CART_ITEM";
 export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
-export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS"
+export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS";
+// export const UPDATE_CART_ITEM = "UPDATE_CART_ITEM";
 
 export const receiveCartItems = (cartItems) => {
   return {
@@ -10,11 +11,18 @@ export const receiveCartItems = (cartItems) => {
     cartItems
   };
 };
-
-export const receiveCartItem = (cartItem) => {
+export const updateCart = (item) => {
   return {
     type: RECEIVE_CART_ITEM,
-    cartItem
+    item
+  };
+};
+
+
+export const receiveCartItem = (item) => {
+  return {
+    type: RECEIVE_CART_ITEM,
+    item
   };
 };
 
@@ -72,4 +80,11 @@ export const deleteCartItem = id => {
   };
 };
 
+export const updateCartItem = item => {
+  return dispatch => {
+    return CartUtil.updateCartItem(item).then(item => {
+      return dispatch(updateCart(item));
+    });
+  };
+};
 

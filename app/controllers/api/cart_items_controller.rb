@@ -21,7 +21,12 @@ class Api::CartItemsController < ApplicationController
       render "api/cart_items/show"
   end
 
-  
+  def update
+    @cart_item = CartItem.find(params[:id])
+    @cart_item.update(cart_item_params)
+      render "api/cart_items/show"
+  end
+
   def index
     @current_user = current_user
     @cart_items = @current_user.cart_items

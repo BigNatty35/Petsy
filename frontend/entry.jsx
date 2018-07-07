@@ -6,9 +6,9 @@ import Root from './components/root';
 import {signup, login} from './actions/session_actions';
 import {fetchProducts, fetchProduct} from "./actions/product_actions";
 import { receiveProducts, receiveProduct } from "./util/product_api_util";
-import { fetchCartItems, fetchCartItem } from "./actions/cart_actions";
-import {receiveCartItem} from "./util/cart_item_util";
-
+// import { fetchCartItems, fetchCartItem } from "./actions/cart_actions";
+import {receiveCartItem, updateCartItem, fetchCartItem} from "./util/cart_item_util";
+// import {updateCartItem} from "./actions/cart_actions";
 document.addEventListener("DOMContentLoaded", () => {
     // const store = configureStore();
     
@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
     
-    window.fetchCartItems = fetchCartItems;
+    window.updateCartItem = updateCartItem;
+    // window.fetchCartItems = fetchCartItems;
     window.fetchCartItem = fetchCartItem;
     window.fetchProducts = fetchProducts;
     window.receiveProducts = receiveProducts;
