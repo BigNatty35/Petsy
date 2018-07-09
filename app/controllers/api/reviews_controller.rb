@@ -10,6 +10,11 @@ class Api::ReviewsController < ApplicationController
     @review.destroy
   end
 
+  def index
+    @product = Product.find(params[:product_id])
+    @reviews = @product.reviews
+  end
+
   private
 
   def review_params

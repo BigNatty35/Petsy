@@ -4,12 +4,17 @@ import {Link, Redirect} from 'react-router-dom';
 class ProductDetail extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: 1};
+    this.state = {
+      value: 1,
+      // reviews: this.props.pro
+    };
+
     this.handleSubmit = this.handleSubmit.bind(this);
   }
  
   componentDidMount() {
-    this.props.fetchProduct(this.props.match.params.product_id);
+    this.props.fetchProduct(this.props.match.params.product_id)
+    // this.props.fetchReviews(this.props.match.params.product_id);
   }
 
 
