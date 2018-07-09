@@ -9,6 +9,7 @@ import { receiveProducts, receiveProduct } from "./util/product_api_util";
 // import { fetchCartItems, fetchCartItem } from "./actions/cart_actions";
 import {receiveCartItem, updateCartItem, fetchCartItem} from "./util/cart_item_util";
 // import {updateCartItem} from "./actions/cart_actions";
+
 document.addEventListener("DOMContentLoaded", () => {
     // const store = configureStore();
     

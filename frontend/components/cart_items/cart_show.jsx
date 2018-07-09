@@ -26,7 +26,7 @@ class CartShow extends React.Component {
       this.props.cartItems.forEach(cartItem => {
        totalSum += (cartItem.price * cartItem.quantity);
      });
-    const total = this.props.cartItems.length > 1 ? `${this.props.cartItems.length} items in your cart` :
+    const total = this.props.cartItems.length != 1 ? `${this.props.cartItems.length} items in your cart` :
     "1 item in your cart";
     return (
       <div className="cartItems-box">

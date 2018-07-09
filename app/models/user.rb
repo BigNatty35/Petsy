@@ -23,7 +23,8 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   has_many :products
   has_many :cart_items
-  has_many :reviews
+  
+  has_many :reviews,
     foreign_key: :author_id,
     class_name: :Review
 
