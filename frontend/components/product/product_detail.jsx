@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
-import ReviewsIndex from '../review/reviews_index';
+import ReviewsIndexContainer from '../review/review_index_container';
 import ReviewForm from '../review/review_form';
 
 
@@ -94,11 +94,10 @@ class ProductDetail extends React.Component {
       </div>
         <div>
           <h1>LEAVE A REVIEW</h1>
-          <ReviewForm product={this.props.product} userId={this.props.userId}
-          username={this.props.username} createReview={this.props.createReview}/>
+          {/* <ReviewFormContainer/> */}
           <br/>
           <br/>
-          <ReviewsIndex reviews={this.props.product.reviews}/>
+          <ReviewsIndexContainer/>
         </div>
     </div>
       );

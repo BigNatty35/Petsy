@@ -5,8 +5,11 @@ import {createCartItem} from '../../actions/cart_actions';
 import {withRouter} from 'react-router-dom';
 import {fetchReviews} from '../../actions/review_actions';
 import {createReview} from '../../actions/review_actions';
+
+
 const msp = (state, ownProps) => {
   const currentProduct = state.entities.products[ownProps.match.params.product_id];
+
   return {
     product: currentProduct,
     // user: state.entities.users[currentProduct.user_id]

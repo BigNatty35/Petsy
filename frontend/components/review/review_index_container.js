@@ -1,9 +1,14 @@
 import {fetchReviews, deleteReview, createReview} from '../../actions/review_actions';
-import   {connect} from 'react-redux';
+import {connect} from 'react-redux';
 import ReviewsIndex from './reviews_index';
-const msp = (state) => {
+import {withRouter} from 'react-router-dom';
+
+const msp = (state, ownProps) => {
+
   return {
-    reviews: Object.values(state.entities.reviews)
+    product: state.entities.products[ownProps.match.params.product_id],
+    userId: state.session.id,
+    username: state.entities.users[state.session.id].username
   };
 };
 
@@ -17,4 +22,4 @@ const mdp = dispatch => {
 };
 
 
-export default connect(msp, mdp)(ReviewsIndex);
+export default withRouter(connect(msp, mdp)(ReviewsIndex));

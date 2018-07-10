@@ -1,5 +1,6 @@
 import React from 'react';
 import {Review} from './review';
+import ReviewForm from './review_form';
 
 class ReviewsIndex extends React.Component {
   constructor(props) {
@@ -8,11 +9,14 @@ class ReviewsIndex extends React.Component {
   }
 
   render() {
+ 
     return (
       <div>
+          <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
+          username={this.props.username} deleteReview={this.props.deleteReview}/>
         <ul>
           <li>
-            {this.props.reviews.map(review => 
+            {this.props.product.reviews.map(review => 
             <Review review={review} key={review.id} deleteReview={this.props.deleteReview}/>)}
           </li>
         </ul>
