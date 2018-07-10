@@ -14,7 +14,7 @@ class ProductDetail extends React.Component {
  
   componentDidMount() {
     this.props.fetchProduct(this.props.match.params.product_id)
-    // this.props.fetchReviews(this.props.match.params.product_id);
+    this.props.fetchReviews();
   }
 
 

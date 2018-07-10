@@ -1,5 +1,5 @@
 import {fetchReviews, deleteReview, createReview} from '../../actions/review_actions';
-import {connect} from 'react-redux';
+import   {connect} from 'react-redux';
 import ReviewsIndex from './reviews_index';
 const msp = (state) => {
   return {

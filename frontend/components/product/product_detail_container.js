@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {fetchProduct} from '../../actions/product_actions';
 import {createCartItem} from '../../actions/cart_actions';
 import {withRouter} from 'react-router-dom';
-
+import {fetchReviews} from '../../actions/review_actions'
 const msp = (state, ownProps) => {
   const currentProduct = state.entities.products[ownProps.match.params.product_id];
   return {
@@ -19,7 +19,8 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
   return {
     fetchProduct: id => dispatch(fetchProduct(id)),
-    createCartItem: item => dispatch(createCartItem(item))
+    createCartItem: item => dispatch(createCartItem(item)),
+    fetchReviews: () => dispatch(fetchReviews())
   };
 };
 
