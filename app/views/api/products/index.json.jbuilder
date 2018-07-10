@@ -5,5 +5,6 @@
     json.img_url  product.img_url
     json.category_id product.category_id
     json.username product.user.username
+    json.reviews product.reviews
   end
 end

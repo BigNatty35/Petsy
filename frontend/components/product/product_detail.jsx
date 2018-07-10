@@ -55,7 +55,7 @@ class ProductDetail extends React.Component {
     if(typeof this.props.product === 'undefined') {
       return (<div>Hello</div>);
     } else {
-
+    
       return (
     <div className="listing-body">
       <nav className="show-nav">
@@ -91,7 +91,7 @@ class ProductDetail extends React.Component {
        </div>
       </div>
         <div>
-          {/* <ReviewsIndex/> */}
+          <ReviewsIndex reviews={this.props.product.reviews}/>
         </div>
     </div>
       );
