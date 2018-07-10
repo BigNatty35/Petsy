@@ -11,7 +11,6 @@ const productsReducer = (state = {}, action) => {
      case RECEIVE_REVIEWS:
       let newerState = merge({}, state);
       newerState[action.reviews] = action.reviews;
-      debugger
       return newerState;
     case REMOVE_PRODUCT:
       let newState = merge({}, state);

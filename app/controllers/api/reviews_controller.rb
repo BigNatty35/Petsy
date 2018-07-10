@@ -13,6 +13,7 @@ class Api::ReviewsController < ApplicationController
   def index
     @product = Product.find(params[:product_id])
     @reviews = @product.reviews
+    render 'api/reviews/index'
   end
 
   private

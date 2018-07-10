@@ -10,7 +10,8 @@ const msp = (state, ownProps) => {
     product: currentProduct,
     // user: state.entities.users[currentProduct.user_id]
     userId: state.session.id,
-    errors: state.errors.cart
+    errors: state.errors.cart,
+    // reviews: currentProduct.reviews
   };
 };
 
@@ -20,7 +21,7 @@ const mdp = dispatch => {
   return {
     fetchProduct: id => dispatch(fetchProduct(id)),
     createCartItem: item => dispatch(createCartItem(item)),
-    fetchReviews: () => dispatch(fetchReviews())
+    fetchReviews: (id) => dispatch(fetchReviews(id))
   };
 };
 

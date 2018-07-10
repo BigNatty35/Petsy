@@ -6,11 +6,11 @@ export const createReview = (review) => {
 };
 
 
-export const fetchReviews = (productId) => {
+export const fetchReviews = (id) => {
   return $.ajax({
     method: "GET",
     url: "/api/reviews",
-    data: {productId}
+    data: {i}
   });
 };
 export const deleteReview = (id) => {

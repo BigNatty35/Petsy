@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
+import ReviewsIndex from '../review/reviews_index';
 
 class ProductDetail extends React.Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class ProductDetail extends React.Component {
   }
  
   componentDidMount() {
-    this.props.fetchProduct(this.props.match.params.product_id)
-    this.props.fetchReviews();
+    this.props.fetchProduct(this.props.match.params.product_id);
+    this.props.fetchReviews(this.props.match.params.product_id);
   }
 
 
@@ -89,6 +90,9 @@ class ProductDetail extends React.Component {
           </div>
        </div>
       </div>
+        <div>
+          {/* <ReviewsIndex/> */}
+        </div>
     </div>
       );
     }

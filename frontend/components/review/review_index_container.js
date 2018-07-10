@@ -10,7 +10,7 @@ const msp = (state) => {
 
 const mdp = dispatch => {
   return {
-    fetchReviews: () => dispatch(fetchReviews()),
+    fetchReviews: (reviews) => dispatch(fetchReviews(reviews)),
     deleteReview: id => dispatch(deleteReview(id)),
     createReview: review => dispatch(createReview(review))
   };
