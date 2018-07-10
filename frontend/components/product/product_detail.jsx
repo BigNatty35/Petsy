@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
 import ReviewsIndex from '../review/reviews_index';
+import ReviewForm from '../review/review_form';
+
 
 class ProductDetail extends React.Component {
   constructor(props) {
@@ -91,6 +93,11 @@ class ProductDetail extends React.Component {
        </div>
       </div>
         <div>
+          <h1>LEAVE A REVIEW</h1>
+          <ReviewForm product={this.props.product} userId={this.props.userId}
+          username={this.props.username} createReview={this.props.createReview}/>
+          <br/>
+          <br/>
           <ReviewsIndex reviews={this.props.product.reviews}/>
         </div>
     </div>

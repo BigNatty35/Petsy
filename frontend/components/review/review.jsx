@@ -3,10 +3,11 @@ import React from 'react';
 export const Review = ({review}) => {
   return (
     <div>
-      {review.username}
-      {review.rating}
+      {review.author_name} RATING: {review.rating}
+      <br/>
       {review.body}
-      {/* <button onClick={deleteReview(review.id)}>Delete</button> */}
+      <br/>
+      <button>Delete</button>
     </div>
   );
 };
