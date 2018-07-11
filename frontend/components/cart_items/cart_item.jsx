@@ -24,13 +24,17 @@ class CartItem extends React.Component {
   }
 
   render() {
-  
+    const each = this.state.quantity > 1 ?
+     `(${this.props.cartItem.price} each)` : undefined;
+    
+ 
+
     return (
     <div className="cartItem-info">
           <div className="cart-image">
             <img src={this.props.cartItem.product_img} alt="" />
           </div>
-          
+
         <div className="sec1">
           {this.props.cartItem.product_name}
           <button className="remove-item" onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove Item
@@ -54,23 +58,27 @@ class CartItem extends React.Component {
               <option value="9">9</option>
               <option value="10">10</option>
             </select>
-            <input type="submit" name="update" value="update"/>
+              <div className="quant-submit">
+                <input type="submit" name="update" value="update"/>
+              </div>
               </label>
             </form>
           </div>
 
 
-
-
-
-        <div>
-        {(this.props.cartItem.quantity * this.props.cartItem.price).toFixed(2)} is your total
-        @{this.props.cartItem.price}(each)
+        <div className="quant-sec">
+        <div classname="sub">
+        ${(this.props.cartItem.quantity * this.props.cartItem.price).toFixed(2)}
         </div>
-          <div className="img-box">
-            
+          <div className="cart-item-price">
+            {each}
           </div>
-    </div>
+        </div>
+        </div>
+
+        
+        
+             
   );
   }
 }

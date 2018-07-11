@@ -22,30 +22,32 @@ class CartShow extends React.Component {
 
   
   render() {
-      let totalSum = 0;
-      this.props.cartItems.forEach(cartItem => {
-       totalSum += (cartItem.price * cartItem.quantity);
-     });
+    let totalSum = 0;
+    this.props.cartItems.forEach(cartItem => {
+      totalSum += (cartItem.price * cartItem.quantity);
+    });
     const total = this.props.cartItems.length != 1 ? `${this.props.cartItems.length} items in your cart` :
     "1 item in your cart";
     return (
       <div className="cartItems-box">
         <div className="header-box">
         <header className="cart-header">
-        <h1>{total}</h1>
-        <h1>${totalSum.toFixed(2)} is your total </h1>
+        <h1 className="total-header">{total}</h1>
         </header>
         </div>
-
         <div className="main-cart-area">
           <div className='cartItems-list'>
           {this.props.cartItems.map(cartItem => {
-            return <CartItem cartItem={cartItem} key={cartItem.id}
+            return <CartItem cartItem={cartItem} cartItems={this.props.cartItems} key={cartItem.id}
             deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}/>;
           })}
           </div>
-            
+          <div className="checkout">
+            <div className="grandTotal">
+              <h1>${totalSum.toFixed(2)} is your total </h1>
+            </div>
         </div>
+      </div>
       </div>
     );
   }
