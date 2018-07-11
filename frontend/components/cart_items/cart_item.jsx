@@ -31,18 +31,24 @@ class CartItem extends React.Component {
 
     return (
     <div className="cartItem-info">
-          <div className="cart-image">
-            <img src={this.props.cartItem.product_img} alt="" />
+          <div className="sec0">
+            <div className="cart-image">
+              <img src={this.props.cartItem.product_img} alt="" />
+            </div>
+            <div className="remove-item-box">
+              <button className="remove-item" onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove
+              </button>
+            </div>
           </div>
 
         <div className="sec1">
           {this.props.cartItem.product_name}
-          <button className="remove-item" onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove Item
-          </button>
+         
         </div>
 
           <div className="sec2">
             <form onSubmit={this.handleSubmit.bind(this)}>
+              <div>
               <label>Quantity:
             <select className="cart-item-quantity" value={this.state.quantity}
               className="dropdown"
@@ -58,10 +64,11 @@ class CartItem extends React.Component {
               <option value="9">9</option>
               <option value="10">10</option>
             </select>
+              </label>
+            </div>
               <div className="quant-submit">
                 <input type="submit" name="update" value="update"/>
               </div>
-              </label>
             </form>
           </div>
 

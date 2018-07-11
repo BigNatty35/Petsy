@@ -52,7 +52,7 @@
    background: none;
   color: #f45800;
   border: 1px solid #f45800;
-  border-radius: 3px;
+  border-radius: 2px;
   box-sizing: border-box;
   font-size: 14px;
   padding: 5px 9px 7px 9px;
@@ -89,7 +89,7 @@ header h1 {
   color: #f45800;
   margin: 20px 0px;
   margin-left: 105px;
-  padding-right: 30px;
+  
   border-right: 1px solid lightgray;
   width: 50%;
 }
@@ -130,6 +130,16 @@ header h1 {
   height: 130px;
 }
 
+
+.quant-sec {
+  margin-left: 20px;
+  margin-right: 14px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+}
 // .dropdown {
 //   margin-top: 0px;
 //   background-color: white;
@@ -161,7 +171,11 @@ header h1 {
   position: relative;
 }
 
-
+.sec0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .quant-submit {
   display: flex;
