@@ -11,9 +11,9 @@ class ReviewsIndex extends React.Component {
   render() {
  
     return (
-      <div>
+      <div className="review-box">
           <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
-          username={this.props.username} deleteReview={this.props.deleteReview}/>
+          username={this.props.username} />
         <ul>
           <li>
             {this.props.product.reviews.map(review => 

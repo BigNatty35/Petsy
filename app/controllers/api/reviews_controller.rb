@@ -9,6 +9,7 @@ class Api::ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    render 'api/reviews/show'
   end
 
   def index

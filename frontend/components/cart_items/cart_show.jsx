@@ -36,24 +36,24 @@ class CartShow extends React.Component {
         <h1>{total}</h1>
 
         <h1>${totalSum.toFixed(2)} is your total </h1>
-      
-        
         </header>
-        <div>
+        </div>
+        <div className="cartItem-box">
           <ul className='cartItems-list'>
+          <li>
           {this.props.cartItems.map(cartItem => {
             return <CartItem cartItem={cartItem} key={cartItem.id}
             deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}/>;
           })}
+          </li>
           </ul>
             
-          </div>
         </div>
       </div>
     );
   }
  }
-// }
+
 
 export default CartShow;
 

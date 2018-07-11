@@ -14,7 +14,7 @@ export const receiveReviews = (reviews) => {
 export const removeReview = (review) => {
   return {
     type: REMOVE_REVIEW,
-    reviewId: review.id
+    review: review
   };
 };
 
