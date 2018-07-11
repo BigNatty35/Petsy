@@ -92,7 +92,7 @@ class ProductDetail extends React.Component {
           </div>
        </div>
       </div>
-        <div>
+        <div className="review-container">
           <h1>LEAVE A REVIEW</h1>
           {/* <ReviewFormContainer/> */}
           <br/>

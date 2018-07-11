@@ -38,11 +38,11 @@ class ReviewForm extends React.Component {
         <label htmlFor="">Leave Review:
         </label>
         <br/>
-        <input type="submit" onClick={this.handleSubmit} value="submit"/>
         </form>
-        <textarea rows="4" cols="50" onChange={this.handleText()} name="comment" form="reviewform">
+        <textarea className="textarea" rows="4" cols="50" onChange={this.handleText()} name="comment" form="reviewform">
           Enter review here...
           </textarea>
+        <input className="review-submit" type="submit" onClick={this.handleSubmit} value="submit"/>
       </div>
     );
   }

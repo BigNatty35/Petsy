@@ -18,10 +18,16 @@ const productsReducer = (state = {}, action) => {
       nextState[action.review.product_id].reviews.push(action.review);
       return nextState;
      case REMOVE_REVIEW:
-   
       let newestState = merge({}, state);
-      delete newestState[action.review.product_id];
-      return newerState;
+      // goes through the current products reviews and filters the one that
+      // matches the review id that is to be deleted
+      let review = newestState[action.review.product_id].reviews.filter(el => 
+      el.id === action.review.id)[0];
+      // find the index of the review object in the reveiws array
+      let idx = newestState[action.review.product_id].reviews.indexOf(review);
+      // splice the array, removing the appropriate review
+      newestState[action.review.product_id].reviews.splice(idx, 1);
+      return newestState;
     case REMOVE_PRODUCT:
       let newState = merge({}, state);
       delete newState[action.productId];
