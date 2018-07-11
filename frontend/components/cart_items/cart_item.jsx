@@ -15,6 +15,7 @@ class CartItem extends React.Component {
     e.preventDefault();
     this.props.cartItem.quantity = this.state.quantity;
     let item = this.props.cartItem;
+    item.quantity = 
     this.props.updateCartItem(item);
   }
 
@@ -26,27 +27,49 @@ class CartItem extends React.Component {
   
     return (
     <div className="cartItem-info">
-      <div className="item-box">
-        <div>
+          <div className="cart-image">
+            <img src={this.props.cartItem.product_img} alt="" />
+          </div>
+          
+        <div className="sec1">
           {this.props.cartItem.product_name}
+          <button className="remove-item" onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove Item
+          </button>
         </div>
+
+          <div className="sec2">
+            <form onSubmit={this.handleSubmit.bind(this)}>
+              <label>Quantity:
+            <select className="cart-item-quantity" value={this.state.quantity}
+              className="dropdown"
+              onChange={this.handleQuant.bind(this)}>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <input type="submit" name="update" value="update"/>
+              </label>
+            </form>
+          </div>
+
+
+
+
+
         <div>
         {(this.props.cartItem.quantity * this.props.cartItem.price).toFixed(2)} is your total
         @{this.props.cartItem.price}(each)
         </div>
           <div className="img-box">
-            <div className="cart-image">
-              <img src={this.props.cartItem.product_img} alt=""/>
-            <button className="remove-item"onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove Item</button>
-            <form onSubmit={this.handleSubmit.bind(this)}>
-            <label className="cart-quantity">Quantity:
-            <input className="quantity-field" onChange={this.handleQuant.bind(this)} type="number" min="1" step="1" value={this.state.quantity} />
-            <input  type="submit" value="Update" />
-            </label>
-            </form>
-            </div>
+            
           </div>
-      </div>
     </div>
   );
   }

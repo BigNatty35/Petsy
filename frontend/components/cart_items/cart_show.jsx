@@ -32,21 +32,18 @@ class CartShow extends React.Component {
       <div className="cartItems-box">
         <div className="header-box">
         <header className="cart-header">
-
         <h1>{total}</h1>
-
         <h1>${totalSum.toFixed(2)} is your total </h1>
         </header>
         </div>
-        <div className="cartItem-box">
-          <ul className='cartItems-list'>
-          <li>
+
+        <div className="main-cart-area">
+          <div className='cartItems-list'>
           {this.props.cartItems.map(cartItem => {
             return <CartItem cartItem={cartItem} key={cartItem.id}
             deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}/>;
           })}
-          </li>
-          </ul>
+          </div>
             
         </div>
       </div>

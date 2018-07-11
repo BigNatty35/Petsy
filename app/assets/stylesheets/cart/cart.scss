@@ -5,22 +5,61 @@
 }
 
 
+.cartItem-info {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  width: 550px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
 
+.single-item:last-child {
+  border-bottom: none;
+}
 
 .cartItems-box {
+  // display: flex;
+  // width: 75%;
+  // height: 75%;
+  // justify-content: center;
+  // flex-direction: column;
   display: flex;
-  width: 75%;
-  height: 75%;
-  justify-content: center;
   flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+  align-content: center;
+  width: 1000px;
+}
+
+.main-cart-area {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin-top: 30px;
 }
 
 
 .remove-item {
-  color: black;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 12px;
+  // color: black;
+  // font-size: 15px;
+  // font-family: 'Times New Roman', Times, serif;
+  // margin: 12px;
+   background: none;
+  color: #f45800;
+  border: 1px solid #f45800;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px 9px 7px 9px;
+  height: 30px;
+  width: 80px;
+
+}
+
+.remove-item:hover {
+  background-color: #FFF3EE;
 }
 
 
@@ -39,17 +78,22 @@ header h1 {
 }
 
 .cartItems-list {
-  position: relative;
-  top: 100px;
-  * {
-    box-sizing: border-box;
-  }
+  // position: relative;
+  // top: 100px;
+  // * {
+  //   box-sizing: border-box;
+  // }
+  color: #f45800;
+  margin: 20px 0px;
+  margin-left: 105px;
+  padding-right: 30px;
+  border-right: 1px solid lightgray;
 }
 
 
 .header-box {
   display: flex;
-  
+  justify-content: space-between;
 }
 
 // .cart-header {
@@ -60,3 +104,37 @@ header h1 {
 //   background-color: #cae8ca;
 //   border: 2px solid #4CAF50;
 // }
+
+.sec1 {
+  margin-left: 20px;
+  margin-right: 14px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+}
+
+
+.sec2 {
+  margin-left: 20px;
+  margin-right: 14px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.dropdown {
+  margin-top: 0px;
+  background-color: white;
+  -webkit-appearance: menulist-button;
+  border: 1px solid #B1ADAB;
+  border-color: rgba(0, 0, 0, 0.15);
+  height: 22px;
+  width: 50px;
+  height: 35px;
+  font-size: 14px;
+  text-indent: 4px;
+}
