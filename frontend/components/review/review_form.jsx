@@ -36,34 +36,25 @@ class ReviewForm extends React.Component {
   render() {
     console.log(this.state.body);
     return (
-      <div>
+      <div className="review-form-box">
         <form onSubmit={this.handleSubmit} id="reviewform">
         <label htmlFor="">Rate this product:
-          {/* <select className="product-rating" value={this.state.rating}
-              className="dropdown"
-              onChange={this.handleRating.bind(this)}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select> */}
+             <br/>
+            5<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="5"/>
             <br/>
-            5 
-            <input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="5"/>
+            
+            4<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="4"/>
             <br/>
-            4
-            <input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="4"/>
+            
+            3<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="3"/>
             <br/>
-            3
-            <input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="3"/>
+            
+            2<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="2"/>
             <br/>
-            2
-            <input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="2"/>
+            
+            1<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="1"/>
             <br/>
-            1
-            <input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="1"/>
-            <br/>
+        <h2>Leave a review:</h2>
         </label>
         <br/>
         </form>

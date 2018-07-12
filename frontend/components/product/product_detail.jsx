@@ -93,8 +93,8 @@ class ProductDetail extends React.Component {
        </div>
       </div>
         <div className="review-container">
-          <h1>LEAVE A REVIEW</h1>
-          {/* <ReviewFormContainer/> */}
+          <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
+            username={this.props.username} />
           <br/>
           <br/>
           <ReviewsIndexContainer/>

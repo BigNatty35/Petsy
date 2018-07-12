@@ -1,6 +1,5 @@
 import React from 'react';
 import {Review} from './review';
-import ReviewForm from './review_form';
 
 class ReviewsIndex extends React.Component {
   constructor(props) {
@@ -12,8 +11,8 @@ class ReviewsIndex extends React.Component {
  
     return (
       <div className="review-box">
-          <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
-          username={this.props.username} />
+          {/* <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
+          username={this.props.username} /> */}
         <ul>
           <li>
             {this.props.product.reviews.map(review => 
