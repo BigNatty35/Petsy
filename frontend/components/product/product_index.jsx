@@ -18,23 +18,34 @@ class ProductIndex extends React.Component {
     
     return (
       <div className="list-body">
-        <div className="slider-class">
+        {/* <div className="slider-class">
             <div>
               <Slider />
+            </div>
+          </div> */}
+          <div className="splash-page">
+            <div className="splash-left">
+              
+            </div>
+            <div className="splash-right">
+              <div>
+
+              </div>
+              <div>
+
+              </div>
             </div>
           </div>
            <div className="index-header">
              <h2>Popular Items</h2>
             </div>
         <div className="list-box">
-          <div>
             <ul className="items-list">
             <li className="index-items">
             {this.props.products.map(product => <ProductIndexItem product={product} key={product.id}/>
             )}
             </li>
           </ul>
-           </div>
         </div>
       </div>
     

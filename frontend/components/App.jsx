@@ -17,7 +17,7 @@ import CartShowContainer from './cart_items/cart_show_container';
 const App = () => (
   <div className="whole-app">
     <Modal/>
-    <div className="main-content">
+  
     <header className="main-header">
       <Header/>
       <SessionButtonContainer/>
@@ -31,10 +31,13 @@ const App = () => (
       <Route path='/product/:product_id' component={ProductDetailContainer}/>
       </Switch>
 
-    </div>
+   
     <div className="footer-box">
       <footer className="footer">
-        <h1 className="logo"> RegrEtsy</h1>
+        <div className='footer-left'>
+        <h1 className="Footerlogo"> RegrEtsy</h1>
+        <p className="footertext">We make it easy to regret your things.</p>
+        </div>
       </footer>
     </div>
   </div>

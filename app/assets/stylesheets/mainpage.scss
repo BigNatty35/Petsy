@@ -8,9 +8,58 @@
 
 
 .footer-box {
+  // display: flex;
+  // flex-direction: row;
+  // border-top: 1px solid grey;
+  height: 80px;
+  margin-top: 30px;
+  border-top: 1px solid #E5E4E2;
+  flex-shrink: 0;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+.footer-left {
   display: flex;
-  flex-direction: row;
-  border-top: 1px solid black;
-  height: 100px;
-  margin-top: 50px;
+  align-items: center;
+}
+
+
+.Footerlogo {
+  // color: #f45800;
+  font-family: 'Merriweather', serif;
+  // font-weight: 100;
+  font-size: 30px;
+  // margin-right: 40px;
+  color: #F56400;
+ 
+  display: flex;
+}
+
+.footertext {
+  margin-left: 20px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+
+.splash-page {
+  border: 1px solid black;
+  height: 455px;
+}
+
+.splash-left {
+  height: 320px;
+  width: 800px;
+  border: 1px solid red;
 }

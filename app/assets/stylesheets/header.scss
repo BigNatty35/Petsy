@@ -45,7 +45,7 @@ hgroup span {
 }
 
 .cart-sec {
-  padding: 8px;
+  padding-right: 8px;
   display: flex;
   flex-direction: column;
   font-size: 21px;
@@ -53,6 +53,7 @@ hgroup span {
   color: #666666;
   // border: 1px solid green;
   justify-content: center;
+  border-right: 1px solid #666666;
 }
 
 
@@ -76,13 +77,11 @@ hgroup span {
 
 .logo {
   // color: #f45800;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Merriweather', serif;
   // font-weight: 100;
   font-size: 39px;
   // margin-right: 40px;
   color: #F56400;
-  height: 30px;
-  width: 60px;
 }
 
 .logo:hover {
