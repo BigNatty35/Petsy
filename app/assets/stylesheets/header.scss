@@ -1,22 +1,27 @@
 
 
 .main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+ display: flex;
+ border: 1px solid black;
+ flex-direction: row;
+ margin-top: 10px;
+//  padding: 25px 40px 25px 40px;
 }
 
 .main-content {
-  display: flex;
+  // display: flex;
   // height: 664px;
-  justify-content: center;
+  // justify-content: center;
 }
 .left-header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 40px;
+  justify-content: space-around;
+  width: 50%;
+  border: 1px solid purple;
+  // padding: 25px 40px 25px 40px
+  
 }
 
 .list-body {
@@ -29,8 +34,10 @@
 .right-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: flex-end;
   margin-right: 40px;
+  width: 50%;
+  border: 1px solid red;
 }
 
 hgroup span {
@@ -69,11 +76,14 @@ hgroup span {
 
 
 .logo {
-  color: #f45800;
+  // color: #f45800;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 100;
+  // font-weight: 100;
   font-size: 39px;
-  margin-right: 20px;
+  // margin-right: 40px;
+  color: #F56400;
+  height: 30px;
+  width: 60px;
 }
 
 .logo:hover {
@@ -124,49 +134,55 @@ hgroup span {
 .searchbar {
 
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   border: 1px solid grey;
-  height: 34px;
-  margin-left: 20px;
+  // height: 34px;
+  margin-left: 40px;
   display: flex;
   flex-direction: row;
 
 }
 .search-field {
-  width: 337px;
+  width: 420px;
+  height: 45px;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 6px 10px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 18px;
   vertical-align: 3px;
-
+  box-shadow: inset 0 1px 2px #E9E9E8, 0 0 0 1000px #fbfbfa inset;
+  border: 1px solid #CFCBC8;
 }
 
 .searchbox {
   display: flex;
   flex-direction: row;
+  // border: 1px solid red;
 }
 
 .search-button {
   color: white;
   background-color: #f45800;
-  height: 23px;
+  height: 33px;
   line-height: 17px;
   padding: 7px 15px 6px 15px;
   border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border: 1px; 
-  border-color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   position: relative;
   right: -1px;
   font-size: 18px;
-  bottom: 1px;
   display: flex;
   flex-direction: row;
 }
 
+
+.searchform {
+  display: flex;
+  flex-direction: row;
+  // border: 1px solid green;
+}
 
 .header-button {
   float: right;
@@ -265,10 +281,7 @@ hgroup span {
   width: 218px;
 }
 
-.searchform {
-  direction: flex;
-  flex-direction: row;
-}
+
 
 .errors {
   color: rgba(206, 0, 0, 0.582);

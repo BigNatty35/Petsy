@@ -15,23 +15,27 @@ import CartShowContainer from './cart_items/cart_show_container';
 // import Slider from '../components/slider/slider';
 
 const App = () => (
-  <div>
+  <div className="whole-app">
     <Modal/>
+    <div className="main-content">
     <header className="main-header">
       <Header/>
       <SessionButtonContainer/>
     </header>
     <Navbar/>
-    <div className="main-content">
-    {/* <Slider/> */}
-    <Switch>
+      <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <ProtectedRoute exact path="/cart" component={CartShowContainer}/>
       <Route exact path="/" component={ProductIndexContainer} />
       <Route path='/product/:product_id' component={ProductDetailContainer}/>
-    </Switch>
-      
+      </Switch>
+
+    </div>
+    <div>
+      <footer>
+
+      </footer>
     </div>
   </div>
 );
