@@ -12,7 +12,6 @@ import Navbar from './navbar/navbar';
 import ProductIndexContainer from './product/product_index_containter';
 import ProductDetailContainer from './product/product_detail_container';
 import CartShowContainer from './cart_items/cart_show_container';
-// import Slider from '../components/slider/slider';
 
 const App = () => (
   <div className="whole-app">
