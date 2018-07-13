@@ -21,13 +21,13 @@ class ProductIndex extends React.Component {
     
           <div className="splash-page">
             <div className="splash-left">
-              
+            <img src="https://s3-us-west-1.amazonaws.com/productpics35/man-crying.jpg"/>
             </div>
             <div className="splash-right">
-              <div>
+              <div className="splash-top">
 
               </div>
-              <div>
+              <div className="splash-bottom">
 
               </div>
             </div>
