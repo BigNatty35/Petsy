@@ -2,24 +2,20 @@
 
 .main-header {
  display: flex;
- border: 1px solid black;
+//  border: 1px solid black;
  flex-direction: row;
- margin-top: 10px;
+ margin-top: 20px;
 //  padding: 25px 40px 25px 40px;
 }
 
-.main-content {
-  // display: flex;
-  // height: 664px;
-  // justify-content: center;
-}
+
 .left-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  border: 1px solid purple;
+  // border: 1px solid purple;
   // padding: 25px 40px 25px 40px
   
 }
@@ -37,7 +33,7 @@
   justify-content: flex-end;
   margin-right: 40px;
   width: 50%;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 hgroup span {
@@ -49,13 +45,16 @@ hgroup span {
 }
 
 .cart-sec {
-  padding-top: 20px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   font-size: 21px;
-  margin-top: 6px;
+  margin-left: 25px;
   color: #666666;
+  // border: 1px solid green;
+  justify-content: center;
 }
+
 
 .cart-sec:hover {
   color: black;
@@ -96,7 +95,6 @@ hgroup span {
   color: #f45800;
   padding: 10px;
   font-size: 18px;
-  margin-right: 19px;
 }
 
 .register:hover {
@@ -140,7 +138,7 @@ hgroup span {
   margin-left: 40px;
   display: flex;
   flex-direction: row;
-
+  // box-sizing: border-box;
 }
 .search-field {
   width: 420px;
@@ -185,18 +183,21 @@ hgroup span {
 }
 
 .header-button {
-  float: right;
+  
   color: #f45800;
   padding: 7px;
-  margin-right: 40px;
+
   border: 1px solid #f45800;
   border-radius: 3px;
   font-size: 17px;
-  min-width: 61px;
-  margin-left: 20px;
+ 
 }
 
+.right-headerbox {
+  display: flex;
+  justify-content: space-evenly;
 
+}
 
 .fa-lg {
     font-size: 2.33333em;
@@ -205,8 +206,8 @@ hgroup span {
 }
 
 .fa-shopping-cart {
-  margin-right: 40px;
-
+  // margin-right: 40px;
+  // padding-top: 3px;
 }
 
 // modal styling *****************************************//

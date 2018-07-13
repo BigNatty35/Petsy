@@ -8,14 +8,15 @@
 .nav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  color: #666666;
-  border: 1px solid #666666;
+  justify-content: space-around;
+  /* color: #666666; */
+  /* border: 1px solid #666666; */
   margin-top: 25px;
-  padding: 7px;
-  box-shadow: 0px 0px 5px lightgrey;
+  padding: 13px;
+  /* box-shadow: 0px 0px 5px lightgrey; */
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
+  letter-spacing: 1px;
 }
 .nav-list li {
   display: flex;
@@ -30,3 +31,6 @@
   transition: 0.3s;
   cursor: pointer;
 }
+
+
+

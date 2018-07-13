@@ -3,3 +3,14 @@
   flex-direction: column;
   height: 100%;
 }
+
+
+
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  height: 100px;
+  margin-top: 50px;
+}

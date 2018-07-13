@@ -32,9 +32,9 @@ const App = () => (
       </Switch>
 
     </div>
-    <div>
-      <footer>
-
+    <div className="footer-box">
+      <footer className="footer">
+        <h1 className="logo"> RegrEtsy</h1>
       </footer>
     </div>
   </div>
