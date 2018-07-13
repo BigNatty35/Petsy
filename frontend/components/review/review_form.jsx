@@ -15,6 +15,8 @@ class ReviewForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleText = this.handleText.bind(this);
+    this.resetText = this.resetText.bind(this);
+    this.handleRating = this.handleRating.bind(this);
   }
   
   handleSubmit(e) {
@@ -26,6 +28,11 @@ class ReviewForm extends React.Component {
   handleText(e) {
     return e => this.setState({
       body: e.currentTarget.value
+    });
+  }
+  resetText(e) {
+    return e => this.setState({
+      body: ''
     });
   }
 
@@ -40,29 +47,29 @@ class ReviewForm extends React.Component {
         <form onSubmit={this.handleSubmit} id="reviewform">
         <label htmlFor="">Rate this product:
              <br/>
-            5<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="5"/>
+            5<input type="radio" name="rating" onClick={this.handleRating} value="5"/>
             <br/>
             
-            4<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="4"/>
+            4<input type="radio" name="rating" onClick={this.handleRating} value="4"/>
             <br/>
             
-            3<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="3"/>
+            3<input type="radio" name="rating" onClick={this.handleRating} value="3"/>
             <br/>
             
-            2<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="2"/>
+            2<input type="radio" name="rating" onClick={this.handleRating} value="2"/>
             <br/>
             
-            1<input type="radio" name="rating" onClick={this.handleRating.bind(this)} value="1"/>
+            1<input type="radio" name="rating" onClick={this.handleRating} value="1"/>
             <br/>
         <h2>Leave a review:</h2>
         </label>
         <br/>
         </form>
         <textarea className="textarea" rows="4" cols="50" onChange={this.handleText()} 
-        name="comment" placeholder="Enter Review Here" form="reviewform" autofocus>
+        name="comment" placeholder="Enter Review Here" form="reviewform" value={this.state.body}>
           
           </textarea>
-        <input className="review-submit" type="submit" onClick={this.handleSubmit} value="submit"/>
+      <input className="review-submit" type="submit" onClick={(e) => {this.handleSubmit(e); this.resetText(e);}} value="submit"/>
       </div>
     );
   }
