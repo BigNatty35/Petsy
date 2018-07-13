@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductIndexItem from "./product_index_item";
-import Slider from "../slider/slider";
+
 
 class ProductIndex extends React.Component {
   constructor(props) {
@@ -18,11 +18,7 @@ class ProductIndex extends React.Component {
     
     return (
       <div className="list-body">
-        {/* <div className="slider-class">
-            <div>
-              <Slider />
-            </div>
-          </div> */}
+    
           <div className="splash-page">
             <div className="splash-left">
               
