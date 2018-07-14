@@ -82,6 +82,7 @@ hgroup span {
   font-size: 39px;
   // margin-right: 40px;
   color: #F56400;
+  margin-left: 50px;
 }
 
 .logo:hover {
@@ -162,7 +163,7 @@ hgroup span {
 .search-button {
   color: white;
   background-color: #f45800;
-  height: 33px;
+  height: 22px;
   line-height: 17px;
   padding: 7px 15px 6px 15px;
   border-radius: 4px;
@@ -170,7 +171,6 @@ hgroup span {
   border-bottom-left-radius: 0;
   font-size: 18px;
   position: relative;
-  right: -1px;
   font-size: 18px;
   display: flex;
   flex-direction: row;
