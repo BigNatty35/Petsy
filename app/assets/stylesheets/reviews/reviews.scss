@@ -22,10 +22,35 @@
 .review-box {
   display: flex
 }
+.singlereview-box {
+  width: 575px;
+  height: 265px;
+  border: 1px solid black;
+}
 
 .review-delete {
   border-radius: 2px;
   // width: 6px;
   // height: 6px;
+  border: 1px solid black;
+}
+
+
+.review-content {
+  display: flex;
+  
+}
+
+.review-content div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.review-body {
+  border: 1px solid black;
+}
+
+.rightside-boxreview {
   border: 1px solid black;
 }
