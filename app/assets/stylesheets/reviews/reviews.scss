@@ -25,32 +25,58 @@
 .singlereview-box {
   width: 575px;
   height: 265px;
-  border: 1px solid black;
+  border-top: 1px solid lightgrey;
+  // border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
 }
 
 .review-delete {
-  border-radius: 2px;
+  // border-radius: 2px;
   // width: 6px;
   // height: 6px;
-  border: 1px solid black;
+  // border: 1px solid black;
+  text-decoration: underline;
+  margin-top: 10px;
 }
 
 
-.review-content {
-  display: flex;
+// .review-content {
+//   display: flex;
   
-}
+// }
 
-.review-content div {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
-}
+// .review-content div {
+//   display: flex;
+//   flex-direction: row;
+//   border: 1px solid black;
+// }
 
 .review-body {
-  border: 1px solid black;
+  // border: 1px solid black;
+  width: 430px;
+  overflow-wrap: break-word;
+  margin-top: 20px
 }
 
 .rightside-boxreview {
-  border: 1px solid black;
+  padding: 20px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftside-boxreview {
+  width: 80px;
+}
+
+.reviews-h1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stars {
+  color: gold;
 }
