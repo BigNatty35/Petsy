@@ -42,24 +42,33 @@ class ReviewForm extends React.Component {
 
   render() {
     console.log(this.state.body);
+    let one = <span className="stars">&#9733;</span>;
+    let two = <span className="stars">&#9733;&#9733;</span>;
+    let three = <span className="stars">&#9733;&#9733;&#9733;</span>;
+    let four = <span className="stars">&#9733;&#9733;&#9733;&#9733;</span>;
+    let five = <span className="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>;
     return (
       <div className="review-form-box">
         <form onSubmit={this.handleSubmit} id="reviewform">
-        <label htmlFor="">Rate this product:
-             <br/>
-            5<input type="radio" name="rating" onClick={this.handleRating} value="5"/>
-            <br/>
+        <label className="star-box">Rate this product:
+             <div>
+              {five}<input type="radio" name="rating" onClick={this.handleRating} value="5"/>
+             </div>
+        
+            <div>
+            {four}<input type="radio" name="rating" onClick={this.handleRating} value="4"/>
+            </div>
+            <div>
+            {three}<input type="radio" name="rating" onClick={this.handleRating} value="3"/>
+            </div>
             
-            4<input type="radio" name="rating" onClick={this.handleRating} value="4"/>
-            <br/>
+            <div>
+            {two}<input type="radio" name="rating" onClick={this.handleRating} value="2"/>
+            </div>
             
-            3<input type="radio" name="rating" onClick={this.handleRating} value="3"/>
-            <br/>
-            
-            2<input type="radio" name="rating" onClick={this.handleRating} value="2"/>
-            <br/>
-            
-            1<input type="radio" name="rating" onClick={this.handleRating} value="1"/>
+            <div>
+            {one}<input type="radio" name="rating" onClick={this.handleRating} value="1"/>
+            </div> 
             <br/>
         <h2>Leave a review:</h2>
         </label>
