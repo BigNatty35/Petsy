@@ -83,9 +83,17 @@
   color: gold;
 }
 
-// button, input[type="submit"] {
-//     cursor: pointer;
-//     /* color: green; */
-//     width: 70px;
-//     text-align: center;
-// }
+.star-box {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.star-box div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-button {
+  display: inline;
+}

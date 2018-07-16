@@ -52,22 +52,38 @@ class ReviewForm extends React.Component {
         <form onSubmit={this.handleSubmit} id="reviewform">
         <label className="star-box">Rate this product:
              <div>
-              {five}<input type="radio" name="rating" onClick={this.handleRating} value="5"/>
+              {five}
+              <div className="rating-button">
+              <input type="radio" name="rating" onClick={this.handleRating} value="5"/>
+              </div>
              </div>
         
             <div>
-            {four}<input type="radio" name="rating" onClick={this.handleRating} value="4"/>
+              {four}
+              <div className="rating-button">
+              <input type="radio" name="rating" onClick={this.handleRating} value="4"/>
+              </div>
             </div>
+
             <div>
-            {three}<input type="radio" name="rating" onClick={this.handleRating} value="3"/>
+              {three}
+              <div className="rating-button">
+              <input type="radio" name="rating" onClick={this.handleRating} value="3"/>
+              </div>
             </div>
             
             <div>
-            {two}<input type="radio" name="rating" onClick={this.handleRating} value="2"/>
+              {two}
+              <div className="rating-button">
+              <input type="radio" name="rating" onClick={this.handleRating} value="2"/>
+              </div>
             </div>
-            
+
             <div>
-            {one}<input type="radio" name="rating" onClick={this.handleRating} value="1"/>
+              {one}
+              <div className="rating-button">
+              <input type="radio" name="rating" onClick={this.handleRating} value="1"/>
+              </div>
             </div> 
             <br/>
         <h2>Leave a review:</h2>
