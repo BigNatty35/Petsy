@@ -15,14 +15,15 @@ class ReviewForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleText = this.handleText.bind(this);
-    this.resetText = this.resetText.bind(this);
     this.handleRating = this.handleRating.bind(this);
   }
   
   handleSubmit(e) {
     e.preventDefault();
     let review = Object.assign({}, this.state); 
-    this.props.createReview(review);
+    this.props.createReview(review).then(() => {
+      this.setState({body: '', rating: 5 });
+    });
   }
 
   handleText(e) {
@@ -30,11 +31,7 @@ class ReviewForm extends React.Component {
       body: e.currentTarget.value
     });
   }
-  resetText(e) {
-    return e => this.setState({
-      body: ''
-    });
-  }
+
 
   handleRating(e) {
     this.setState({ rating: e.currentTarget.value });
@@ -54,7 +51,7 @@ class ReviewForm extends React.Component {
              <div>
               {five}
               <div className="rating-button">
-              <input type="radio" name="rating" onClick={this.handleRating} value="5"/>
+              <input type="radio" name="rating" onClick={this.handleRating} value="5" />
               </div>
              </div>
         
@@ -94,7 +91,7 @@ class ReviewForm extends React.Component {
         name="comment" placeholder="Enter Review Here" form="reviewform" value={this.state.body}>
           
           </textarea>
-      <input className="review-submit" type="submit" onClick={(e) => {this.handleSubmit(e); this.resetText(e);}} value="submit"/>
+      <input className="review-submit" type="submit" onClick={(e) => this.handleSubmit(e)} value="submit"/>
       </div>
     );
   }

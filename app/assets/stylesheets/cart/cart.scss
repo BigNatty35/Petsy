@@ -1,7 +1,8 @@
 .cart-image {
   height: 203px;
   width: 203px;
-  object-fit: cover;
+  // object-fit: cover;
+  overflow: hidden;
 }
 
 
