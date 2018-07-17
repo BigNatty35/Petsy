@@ -7,7 +7,7 @@
   /* justify-content: center; */
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  // border: 1px solid black;
   /* padding: 100px; */
 }
 
@@ -69,16 +69,28 @@
 
 .splash-left {
   height: 370px;
-  width: 800px;
+  width: 875px;
   // border: 1px solid red;
   /* margin-right: 0px; */
   margin-top: 20px;
   margin-bottom: 50px;
+  display: flex;
 }
 
 .splash-left img {
   border-radius: 4px;
   height: 320px;
+}
+
+.splashleft-pic {
+  width: 590px;
+  height: 320px;
+}
+
+.splashleft-words {
+  width: 265px;
+  height: 320px;
+  border: 1px solid red;
 }
 
 .splash-right {
