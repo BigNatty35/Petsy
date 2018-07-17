@@ -10,10 +10,9 @@
 }
 
 .show-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 .product-show {
@@ -85,6 +84,10 @@
   font-size: 20px
 }
 
+.profile-pic {
+  height: 75px;
+  width: 75px;
+}
 
 .image {
   padding: 5px;

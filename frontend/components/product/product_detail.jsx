@@ -61,8 +61,8 @@ class ProductDetail extends React.Component {
       return (
     <div className="listing-body">
       <nav className="show-nav">
+        <img className="profile-pic" src={this.props.product.profile_pic} alt=""/>
          <a href="#" className="nav-user">{this.props.product.username}</a>
-        
       </nav>
       <div className="product-show">
         <div className="leftside-show">
