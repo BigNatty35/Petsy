@@ -62,6 +62,7 @@ class ProductDetail extends React.Component {
     <div className="listing-body">
       <nav className="show-nav">
          <a href="#" className="nav-user">{this.props.product.username}</a>
+        
       </nav>
       <div className="product-show">
         <div className="leftside-show">
