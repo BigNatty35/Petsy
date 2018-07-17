@@ -5,15 +5,30 @@ import ProductIndexItem from "./product_index_item";
 class ProductIndex extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      products: []
+    };
   }
 
 
   componentDidMount() {
-    this.props.fetchProducts();
+    this.props.fetchProducts().then (() => 
+      this.setState({products: this.shuffle(this.props.products).slice(0,6)})
+    );
   }
 
   
+  shuffle(array) {
+    let length = array.length, current, idx;
+    while(length) {
+      idx = Math.floor(Math.random() * length--);
+      current = array[length];
+      array[length] = array[idx];
+      array[idx] = current;
+    }
+    return array;
+  }
+
   render() {
     
     return (
@@ -36,7 +51,9 @@ class ProductIndex extends React.Component {
             <div className="splash-right">
               <div className="splash-top">
               <img src={"https://s3-us-west-1.amazonaws.com/productpics35/desertjunk.jpeg"}/>
+              <div className="Woohoo-box">
               <span>Woohoo! These regrets ship for free.</span>
+              </div>
               
               </div>
               <div className="splash-bottom">
@@ -50,7 +67,7 @@ class ProductIndex extends React.Component {
         <div className="list-box">
             <ul className="items-list">
             <li className="index-items">
-            {this.props.products.map(product => <ProductIndexItem product={product} key={product.id}/>
+            {this.state.products.map(product => <ProductIndexItem product={product} key={product.id}/>
             )}
             </li>
           </ul>
