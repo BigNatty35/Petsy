@@ -74,7 +74,7 @@ class CartItem extends React.Component {
 
 
         <div className="quant-sec">
-        <div classname="sub">
+        <div className="sub">
         ${(this.props.cartItem.quantity * this.props.cartItem.price).toFixed(2)}
         </div>
           <div className="cart-item-price">

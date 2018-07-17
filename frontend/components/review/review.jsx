@@ -40,6 +40,7 @@ export const Review = ({review, deleteReview}) => {
     <div>
     <div className="singlereview-box">
       <div className="leftside-boxreview">
+      
       {review.author_name} 
       </div>
       
