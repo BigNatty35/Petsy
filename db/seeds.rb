@@ -34,7 +34,7 @@ cat8 = Category.create(category_name: "electronics")
 # clothes 4
 Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshoes.jpg", description: "Lightweight and collapsible, these kicks show off a striking rhinestone design. These shoes feature a very exculsive springy heel..enough said.", title: "Great Shoes", price: 18.33, category_id: cat4.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/martini-glass-hat1.jpg", description: "Extremely rare head piece.", title: "Rare Hat", price: 37.99, category_id: cat4.id)
-Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshirt.jpg", description: "If one hawaiian shirt is concidered 'chill', imagine what a MULTI-PATTERN hawaiian shirt means? That's right, you guessed it. Now hurry.", title: "Shirt", price: 20.50, category_id: cat4.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshirt.jpg", description: "If one hawaiian shirt is concidered 'chill', imagine what a MULTI-PATTERN hawaiian shirt means? That's right, you guessed it. Now hurry.", title: "Shirt", price: 20.75, category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hugjacket.jpg", description: "Need a hug? Where this jacket at all times.", title: "Hugger Jacket", price: 45.99 , category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/shirtlessjacket.jpg", description: "Look at this. Beautiful, isn't it?", title: "Body Jacket", price: 26.99, category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglydress.jpg", description: "Dare to be different.", title: "Rare Dress", price: 67.99 , category_id: cat4.id)
@@ -46,7 +46,7 @@ Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/cheeseburger.jpg", description: "Good for the heart, stomach and overall health.", title: "Ultimate Burger", price: 13.99, category_id: cat3.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hotdogs.jpg", description: "What is a hotdog made of exactly? Who cares! Here's a ton of them! ", title: "Hotdogs", price: 3.59, category_id: cat3.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/maggotcheese.jpg", description: "Known on the streets as 'Maggot Cheese' Casu marzu is a traditional Sardinian sheep milk cheese that contains live insect larvae (maggots). Derived from pecorino, casu marzu goes above and beyond typical fermentation to a stage of decomposition,
- brought about by the digestive action of the larvae of the cheese fly Piophila casei.", title: "Casu marzu", price: 100.50, category_id: cat3.id)
+ brought about by the digestive action of the larvae of the cheese fly Piophila casei.", title: "Casu marzu", price: 100.75, category_id: cat3.id)
 
 
 # pets 2
@@ -62,6 +62,7 @@ Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/iarm.jpg", description: "Need an extra hand? Say no more.", title: "iArm", price: 34.99, category_id: cat7.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/shoebroom.jpg", description: "Become a cleaning machine! You're friends and family will always enjoy your company,", title: "Shoe Broom", price: 17.00, category_id: cat7.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/sodatap.jpg", description: "You deserve to drink soda like a boss.", title: "Soda Dispenser", price: 14.00, category_id: cat7.id)
+Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/snakepit.jpg", description: "Perfect for the backyard. Very little maintenance. ", title: "Snake Pit", price: 60.58, category_id: cat7.id)
 
 # jewelry 5
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat5.id)
@@ -78,8 +79,8 @@ Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ptcruiser.jpeg", description: "2000 cool points at soon as you unlock the door. This thing is nothing less than sweet.", title: "The Cruiser", price: 300.44, category_id: cat6.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/skooterbike.jpg", description: "Just check out the hardwork put into this thing. You gotta respect this.", title: "Rare Bike", price: 67.78, category_id: cat6.id)
 Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglybike.jpg", description: "Round tires are overrated. Welcome to the future.", title: "Fast Bike", price: 445.99, category_id: cat6.id)
-Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/walkingbike.jpg", description: "Sometimes you just have to take a unique approach to life.", title: "Strange Bike", price: 300.50, category_id: cat6.id)
-Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/slowcar.jpg", description: "This is a masterpiece.", title: "Slow Car", price: 217.50, category_id: cat6.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/walkingbike.jpg", description: "Sometimes you just have to take a unique approach to life.", title: "Strange Bike", price: 300.75, category_id: cat6.id)
+Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/slowcar.jpg", description: "This is a masterpiece.", title: "Slow Car", price: 217.75, category_id: cat6.id)
 
 
 # electronics 8
