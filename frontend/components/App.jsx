@@ -12,6 +12,7 @@ import Navbar from './navbar/navbar';
 import ProductIndexContainer from './product/product_index_containter';
 import ProductDetailContainer from './product/product_detail_container';
 import CartShowContainer from './cart_items/cart_show_container';
+// import CategoryShowContainer from './category_show/CategoryShowContainer';
 
 const App = () => (
   <div className="whole-app">
@@ -28,6 +29,7 @@ const App = () => (
       <ProtectedRoute exact path="/cart" component={CartShowContainer}/>
       <Route exact path="/" component={ProductIndexContainer} />
       <Route path='/product/:product_id' component={ProductDetailContainer}/>
+      {/* <Route path='/catergories/:category_id' component={CategoryShowContainer}/> */}
       </Switch>
 
    
