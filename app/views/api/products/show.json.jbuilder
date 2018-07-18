@@ -16,3 +16,4 @@
   json.set! :reviews, @product.reviews
   json.set! :username, @product.user.username
   json.set! :profile_pic, @product.user.img_url
+  json.set! :category, @product.category.category_name

@@ -7,5 +7,6 @@
     json.username product.user.username
     json.reviews product.reviews
     json.profile_pic product.user.img_url
+    json.category_name product.category.category_name
   end
 end
