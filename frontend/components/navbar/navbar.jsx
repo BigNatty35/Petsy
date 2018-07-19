@@ -1,23 +1,51 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const  Navbar = () => {
-  return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        <Link to='/catergories/entertainment'> <li>Entertainment</li> </Link>
-        <Link to='/catergories/pets'><li>Pets</li></Link>
-        <Link to='/catergories/food'><li>Food</li></Link>
-        <Link to='/catergories/clothes'><li>Clothes</li></Link>
-        <Link to='/catergories/jewlery'><li>Jewelry</li></Link>
-        <Link to='/catergories/vehicles'><li>Vehicles</li></Link>
-        <Link to='/catergories/household'><li>Household</li></Link>
-        <Link to='/catergories/electronics'><li>Electronics</li></Link>
-      </ul>
-    </nav>
-  );
-};
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+
+  }
 
 
+  render() {
+    return (
+      <nav className="navbar">
+        <ul className="nav-list">
+          <button onClick={() => this.props.history.push(`/categories/entertainment`)}>
+            Entertainment
+          </button>
+          <button
+            onClick={() => this.props.history.push(`/categories/pets`)}
+          >
+            Pets
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/food`)}>
+            Food
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/clothes`)}>
+            Clothes
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/jewelry`)}>
+            Jewelry
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/vehicles`)}>
+            Vehicles
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/household`)}>
+            Household
+          </button>
+          <button onClick={() => this.props.history.push(`/categories/electronics`)}>
+            Electronics
+          </button>
+        </ul>
+      </nav>
+    );
+  }
+}
+  
+  
 
-export default Navbar;
+
+
+export default withRouter(Navbar);
