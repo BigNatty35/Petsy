@@ -8,7 +8,7 @@ class ReviewsIndex extends React.Component {
   }
 
   render() {
- 
+    
     return (
       <div className="review-box">
           {/* <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}

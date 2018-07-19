@@ -14,8 +14,8 @@ const msp = (state, ownProps) => {
     product: currentProduct,
     // user: state.entities.users[currentProduct.user_id]
     userId: state.session.id,
-    username: state.entities.users[state.session.id].username,
-    errors: state.errors.cart,
+    // username: state.entities.users[state.session.id].username,
+    errors: state.errors.cart
     // reviews: currentProduct.reviews
   };
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, Redirect} from 'react-router-dom';
 import ReviewsIndexContainer from '../review/review_index_container';
-import ReviewForm from '../review/review_form';
+import ReviewFormContainer from '../review/review_form_container';
 
 
 class ProductDetail extends React.Component {
@@ -9,16 +9,15 @@ class ProductDetail extends React.Component {
     super(props);
     this.state = {
       value: 1,
-      // reviews: this.props.pro
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
  
   componentDidMount() {
+
     this.props.fetchProduct(this.props.match.params.product_id);
-    // this.props.fetchReviews(this.props.match.params.product_id);
-       $(document).scrollTop(0);
+     $(document).scrollTop(0);
   }
 
 
@@ -60,6 +59,7 @@ class ProductDetail extends React.Component {
     } else {
     
       return (
+        
     <div className="listing-body">
       <nav className="show-nav">
         <img className="profile-pic" src={this.props.product.profile_pic} alt=""/>
@@ -95,8 +95,7 @@ class ProductDetail extends React.Component {
        </div>
       </div>
         <div className="review-container">
-          <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
-            username={this.props.username} />
+          {/* <ReviewFormContainer/> */}
           <br/>
           <br/>
           <ReviewsIndexContainer/>

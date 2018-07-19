@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +16,6 @@ const SessionButtons = ({ fetchCartItems, currentUser, logout, login, signup, op
       <div className="right-headerbox">
         <div className="cart-sec">
         <button className="register" onClick={() => openModal('Register')}>Register</button>
-
         </div>
         <div className="cart-sec">
         <button className="header-button" onClick={() => openModal('Sign In')}>Sign in</button>

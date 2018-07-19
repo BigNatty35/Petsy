@@ -44,7 +44,7 @@ class ReviewForm extends React.Component {
     let three = <span className="stars">&#9733;&#9733;&#9733;</span>;
     let four = <span className="stars">&#9733;&#9733;&#9733;&#9733;</span>;
     let five = <span className="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>;
-    
+  
     return (
       <div className="review-form-box">
         <form onSubmit={this.handleSubmit} id="reviewform">
