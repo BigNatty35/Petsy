@@ -7,9 +7,9 @@ const msp = (state, ownProps) => {
   
   return {
     product: state.entities.products[ownProps.match.params.product_id],
-    userId: state.session.id,
-    username: state.entities.users[state.session.id].username
-    
+    // userId: state.session.id,
+    // username: state.entities.users[state.session.id].username
+
   };
 };
 

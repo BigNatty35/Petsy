@@ -7,8 +7,8 @@ class ReviewForm extends React.Component {
 
     this.state = {
       body: '', 
-      author_name: this.props.username,
-      author_id: this.props.userId, 
+      // author_name: this.props.username,
+      // author_id: this.props.userId, 
       rating: 5,
       product_id: this.props.product.id
 
@@ -20,7 +20,8 @@ class ReviewForm extends React.Component {
   
   handleSubmit(e) {
     e.preventDefault();
-    let review = Object.assign({}, this.state); 
+    let review = Object.assign({}, this.state);
+
     this.props.createReview(review).then(() => {
       this.setState({body: '', rating: 5 });
     });

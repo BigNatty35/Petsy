@@ -95,7 +95,7 @@ class ProductDetail extends React.Component {
        </div>
       </div>
         <div className="review-container">
-          {/* <ReviewFormContainer/> */}
+          <ReviewFormContainer/>
           <br/>
           <br/>
           <ReviewsIndexContainer/>
