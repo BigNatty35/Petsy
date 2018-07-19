@@ -5,7 +5,6 @@ import { fetchCartItems, deleteCartItem, updateCartItem} from '../../actions/car
 
 
 const msp = (state, ownProps) => {
-  debugger
   return {
     cartItems: Object.values(state.entities.cartItems),
     errors: state.errors.cart
