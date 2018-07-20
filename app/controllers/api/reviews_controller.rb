@@ -9,7 +9,7 @@ class Api::ReviewsController < ApplicationController
     @review.save
     render 'api/reviews/show'
     else
-      render json: ["You must be logged in"], status: 422
+    render json: ["You must be logged in"], status: 422
     end
   end
 

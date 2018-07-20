@@ -3,7 +3,7 @@ import * as ReviewUtil from "../util/review_util";
 export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
-export const RECEIVE_REVIEW_ERRORS = "RECEIVE_ERRORS";
+export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
 
 export const receiveReviews = (reviews) => {
   return {
@@ -35,16 +35,24 @@ export const receiveErrors = errors => {
   };
 };
 
-export const createReview = (review) => {
-  return dispatch => {
-    return ReviewUtil.createReview(review).then(newReview => {
-      return dispatch(receiveReview(newReview), err => {
-        return dispatch(receiveErrors(err.responseJSON));
-      });
-    });
-  };
-};
+// export const createReview = (review) => {
+//   return dispatch => {
+//     return ReviewUtil.createReview(review).then(newReview => {
+//       return dispatch(receiveReview(newReview), err => {
+//         return dispatch(receiveErrors(err.responseJSON));
+//       });
+//     });
+//   };
+// };
 
+
+export const createReview = review => dispatch => (
+  ReviewUtil.createReview(review).then(newReview => {
+    return dispatch(receiveReview(newReview));
+  }, err => (
+    dispatch(receiveErrors(err.responseJSON))
+  ))
+);
 
 
 

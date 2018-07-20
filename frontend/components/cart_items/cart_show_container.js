@@ -6,8 +6,7 @@ import { fetchCartItems, deleteCartItem, updateCartItem} from '../../actions/car
 
 const msp = (state, ownProps) => {
   return {
-    cartItems: Object.values(state.entities.cartItems),
-    errors: state.errors.cart
+    cartItems: Object.values(state.entities.cartItems)
   };
 };
 
