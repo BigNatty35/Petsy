@@ -36,7 +36,8 @@ class CartItem extends React.Component {
               <img src={this.props.cartItem.product_img} alt="" />
             </div>
             <div className="remove-item-box">
-              <button className="remove-item" onClick={() => this.props.deleteCartItem(this.props.cartItem.id)}>Remove
+              <button className="remove-item" onClick={() => {this.props.deleteCartItem(this.props.cartItem.id); 
+                this.props.clearErrors();}}>Remove
               </button>
             </div>
           </div>

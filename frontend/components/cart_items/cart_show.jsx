@@ -39,7 +39,8 @@ class CartShow extends React.Component {
           <div className='cartItems-list'>
           {this.props.cartItems.map(cartItem => {
             return <CartItem cartItem={cartItem} cartItems={this.props.cartItems} key={cartItem.id}
-            deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}/>;
+            deleteCartItem={this.props.deleteCartItem} updateCartItem={this.props.updateCartItem}
+            clearErrors={this.props.clearErrors}/>;
           })}
           </div>
           <div className="checkout">

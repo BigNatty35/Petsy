@@ -3,8 +3,7 @@ export const RECEIVE_CART_ITEMS = "RECEIVE_CART_ITEMS";
 export const RECEIVE_CART_ITEM = "RECEIVE_CART_ITEM";
 export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
 export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS";
-// export const UPDATE_CART_ITEM = "UPDATE_CART_ITEM";
-
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const receiveCartItems = (cartItems) => {
   return {
     type: RECEIVE_CART_ITEMS,
@@ -38,6 +37,11 @@ export const receiveErrors = errors => ({
   errors
 });
 
+export const clearErrors = () => {
+  return {
+    type: CLEAR_ERRORS
+  };
+};
 
 export const fetchCartItems = () => {
   return dispatch => {
