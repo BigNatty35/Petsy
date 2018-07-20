@@ -23,7 +23,7 @@ class SessionForm extends React.Component {
 
   handleDemoSubmit(e) {
     e.preventDefault();
-    this.props.processForm({ username: "carey1", password: "password" }).then(() => { this.props.closeModal(); this.props.clearErrors();});
+    this.props.processForm({ username: "carey1", password: "password" }).then(() => {this.props.closeModal(); this.props.clearErrors();});
   }
 
   handleDemoSignupSubmit(e) {
@@ -34,7 +34,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(() => this.props.closeModal());
+    this.props.processForm(user).then(() => { this.props.closeModal(); this.props.clearErrors();});
   }
 
   renderErrors() {
