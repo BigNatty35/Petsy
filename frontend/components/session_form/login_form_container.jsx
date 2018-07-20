@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
 import SessionForm from './session_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
+import {clearErrors} from '../../actions/review_actions';
 
 const mapStateToProps = ({ errors }) => {
   return {
@@ -22,7 +23,8 @@ const mapDispatchToProps = dispatch => {
       </button>
     ),
     closeModal: () => dispatch(closeModal()),
-    openModal: (modal) => dispatch(openModal('Register'))
+    openModal: (modal) => dispatch(openModal('Register')),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 

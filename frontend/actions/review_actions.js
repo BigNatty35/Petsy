@@ -4,11 +4,20 @@ export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
 export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+
 
 export const receiveReviews = (reviews) => {
   return {
     type: RECEIVE_REVIEWS,
     reviews
+  };
+};
+
+
+export const clearErrors = () => {
+  return {
+    type: CLEAR_ERRORS
   };
 };
 
