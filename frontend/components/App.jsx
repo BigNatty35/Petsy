@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from './search_bar';
+import SearchBar from './searchbar/search_bar';
 import Header from './header/header';
 import SessionButtons from './session_form/session_buttons';
 import SessionButtonContainer from './session_form/session_button_container';

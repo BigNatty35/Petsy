@@ -1,4 +1,4 @@
-import SearchBar from '../search_bar';
+import SearchBar from '../searchbar/search_bar';
 import React from 'react';
 import SessionButtons from '../session_form/session_buttons';
 import { Link, withRouter } from 'react-router-dom';
