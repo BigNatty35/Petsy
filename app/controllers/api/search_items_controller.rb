@@ -8,6 +8,6 @@ class Api::SearchItemsController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:search_name)
+    params.require(:product).permit(:search_name)
   end
 end

@@ -1,34 +1,39 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { withRouter} from 'react-router-dom'
-import {fetchProduct} from '../../actions/product_actions';
+import { withRouter} from 'react-router-dom';
+import {fetchSearchProduct} from '../../actions/product_actions';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      item: '' 
+      query: '' 
     };
     this.onInputChange = this.onInputChange.bind(this);
+    this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
   onInputChange(e) {
-    this.setState({ item: e.target.value });
+    this.setState({ query: e.target.value });
   }
 
   onFormSubmit(e) {
     e.preventDefault();
-    this.props.fetchProduct()
+    this.props.fetchSearchProduct(this.setState.query).then(() => {
+      this.props.history.push('/search');
+    });
+    this.setState({query: ''});
   }
 
   render() {
+    console.log(this.state.query);
     return (
       <form className="searchform" onSubmit={this.onFormSubmit} >
       <div className="searchbox">
         <input
           placeholder="Search for items"
           className="search-field"
-          value={this.state.item}
+          value={this.state.query}
           onChange={this.onInputChange} />
 
         <span className="outer-search">
@@ -50,7 +55,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
   return {
-    fetchProduct: id => dispatch(fetchProduct(id))
+    fetchSearchProduct: query => dispatch(fetchSearchProduct(query))
   };
 };
 

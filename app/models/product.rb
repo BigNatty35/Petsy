@@ -23,7 +23,7 @@ class Product < ApplicationRecord
   has_many :reviews
 
   def self.search_product(search_params)
-    if product_params
+    if search_params
       query = '%' + product_params.downcase + '%'
       @search_products = Product.where('lower(title) LIKE ?', search_param).to_a
     end

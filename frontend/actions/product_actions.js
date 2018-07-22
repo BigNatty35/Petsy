@@ -2,7 +2,7 @@ import * as APIUtil from "../util/product_api_util";
 export const RECEIVE_PRODUCTS = "RECEIVE_PRODUCTS";
 export const RECEIVE_PRODUCT = "RECEIVE_PRODUCT";
 export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
-
+export const RECEIVE_SEARCH_PRODUCTS = "RECEIVE_SEARCH_PRODUCTS";
 
 
 export const receiveProducts = (products) => {
@@ -22,6 +22,13 @@ export const removeProduct = (id) => {
   return {
     type: RECEIVE_PRODUCT,
     id
+  };
+};
+
+export const receiveSearchProducts = products => {
+  return {
+    type: RECEIVE_SEARCH_PRODUCTS,
+    products
   };
 };
 
@@ -60,3 +67,10 @@ export const deleteProduct = id => {
 };
 
 
+export const fetchSearchProduct = query => {
+  return dispatch => {
+    return APIUtil.fetchSearchProduct(query).then(searchProducts => {
+      return dispatch(receiveSearchProducts(searchProducts));
+    });
+  };
+};

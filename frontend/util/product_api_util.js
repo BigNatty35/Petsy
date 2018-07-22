@@ -28,3 +28,12 @@ export const deleteProduct = (id) => {
     url: `/api/product/${id}`
   });
 };
+
+
+export const fetchSearchProduct = ({title}) => {
+  return $.ajax({
+    method: "GET",
+    url: '/api/search_items',
+    data: {product: {title}}
+  });
+};
