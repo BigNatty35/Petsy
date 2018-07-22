@@ -1,9 +1,7 @@
 class Api::SearchItemsController < ApplicationController
 
   def index
-    @products = Product.find_each do |product|
-      item.include?(search_params)
-    end
+    @products = Product.search_product(search_params[:search_name])
     render 'api/products/index'
   end
 
