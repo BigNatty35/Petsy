@@ -4,6 +4,7 @@ export const RECEIVE_CART_ITEM = "RECEIVE_CART_ITEM";
 export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
 export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
+
 export const receiveCartItems = (cartItems) => {
   return {
     type: RECEIVE_CART_ITEMS,

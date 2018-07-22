@@ -3,16 +3,21 @@ class Api::CartItemsController < ApplicationController
   # before_action :require_logged_in
   
   def create 
-    @current_user = current_user
-    
-    @cart_item = CartItem.new(cart_item_params)
-    @cart_items = @current_user.cart_items
-    
-    if itemExists?(@cart_items, @cart_item)
-      render json: ["You aleady have this item in cart"], status: 422
+    if logged_in?
+      @current_user = current_user
+      @cart_item = CartItem.new(cart_item_params)
+      @cart_item.user_id = @current_user.id
+      @cart_items = @current_user.cart_items
+
+      if itemExists?(@cart_items, @cart_item)
+        render json: ["You aleady have this item in cart"], status: 422
+      else
+        @cart_item.save
+        render "api/cart_items/show"
+      end
+      
     else
-      @cart_item.save
-      render "api/cart_items/show"
+     render json: ["You must be logged in"], status: 422
     end
   end
 
@@ -42,7 +47,7 @@ class Api::CartItemsController < ApplicationController
   private
 
   def cart_item_params
-    params.require(:item).permit(:product_id, :product_img, :quantity, :user_id)
+    params.require(:item).permit(:product_id, :product_img, :quantity)
   end
 
   def itemExists?(items, new_item)
