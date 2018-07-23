@@ -13,7 +13,16 @@
 }
 
 
+.index-header h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.index-header h2:hover {
+  text-decoration: underline;
+}
 
 .items-list {
   // display: flex;
