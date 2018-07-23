@@ -14,6 +14,7 @@
 #
 
 class Product < ApplicationRecord
+  # include PgSearch
   validates :user_id, :description, :title, :price, :category_id, presence: true 
   
   
@@ -21,6 +22,8 @@ class Product < ApplicationRecord
   belongs_to :user
   has_many :cart_items
   has_many :reviews
+
+  # pg_search_scope :search_for, against: %i(title)
 
   def self.search_product(search_params)
     if search_params
