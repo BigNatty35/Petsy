@@ -21,8 +21,10 @@ const SessionButtons = ({ fetchCartItems, currentUser, logout, login, signup, op
         <button className="header-button" onClick={() => openModal('Sign In')}>Sign in</button>
         </div>
         <div className="cart-sec">
-          <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i></Link>
+          <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i>
+          <br/>
           <span className="cart-text">Cart</span>
+          </Link>
         </div>
       </div>
     </hgroup>
