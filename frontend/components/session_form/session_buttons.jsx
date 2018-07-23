@@ -33,15 +33,19 @@ const SessionButtons = ({ fetchCartItems, currentUser, logout, login, signup, op
     <hgroup className="right-header">
       <div className="right-headerbox">
         <div className='cart-sec'>
-          <Link to='/'><i className="fas fa-home fa-lg"></i></Link>
+          <Link to='/'><i className="fas fa-home fa-lg"></i>
+          <br/>
           <span className="home-text">Home</span>
+          </Link>
         </div>
         <div className="cart-sec">
           <button className="header-button" onClick={() => {logout(); goHome();}}>Log Out</button>
         </div>
         <div className="cart-sec">
-          <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i></Link>
+          <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i>
+          <br/>
           <span className="cart-text">Cart</span>
+          </Link>
         </div>
       </div>
     </hgroup>

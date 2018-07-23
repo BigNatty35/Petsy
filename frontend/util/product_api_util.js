@@ -30,10 +30,10 @@ export const deleteProduct = (id) => {
 };
 
 
-export const fetchSearchProduct = ({title}) => {
+export const fetchSearchProduct = query => {
   return $.ajax({
     method: "GET",
     url: '/api/search_items',
-    data: {product: {title}}
+    data: {query}
   });
 };
