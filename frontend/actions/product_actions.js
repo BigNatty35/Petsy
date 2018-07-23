@@ -68,7 +68,6 @@ export const deleteProduct = id => {
 
 
 export const fetchSearchProduct = query => {
-  debugger
   return dispatch => {
     return APIUtil.fetchSearchProduct(query).then(searchProducts => {
       return dispatch(receiveSearchProducts(searchProducts));
