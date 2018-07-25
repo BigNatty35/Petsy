@@ -1,5 +1,4 @@
 import React from 'react';
-// import { deleteCartItem } from '../../util/cart_item_util';
 
 
 class CartItem extends React.Component {

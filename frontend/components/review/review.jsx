@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Review = ({review, deleteReview}) => {
+export const Review = ({review, deleteReview, userId}) => {
   let today = new Date();
   let dd = today.getDate();
   let mm = today.getMonth() + 1;
@@ -34,9 +34,12 @@ export const Review = ({review, deleteReview}) => {
     stars = five;
   }
 
-
+  const deleteButton = userId === review.author_id ? 
+  <button className="review-delete" onClick={() => deleteReview(review.id)}>delete</button> :
+  null;
+  
   return (
-   
+    
     <div>
     <div className="singlereview-box">
       <div className="leftside-boxreview">
@@ -47,7 +50,7 @@ export const Review = ({review, deleteReview}) => {
       <div className="rightside-boxreview">
         <div className="review-top">
           <div>
-              {stars}
+            {stars}
           </div>
           <div>
           {today}
@@ -56,7 +59,7 @@ export const Review = ({review, deleteReview}) => {
         <div className="review-body">
         {review.body}
         </div>
-      <button className="review-delete" onClick={() => deleteReview(review.id)}>delete</button>
+        {deleteButton}
       </div>
       <br/>
     </div>
@@ -64,3 +67,4 @@ export const Review = ({review, deleteReview}) => {
 
   );
 };
+

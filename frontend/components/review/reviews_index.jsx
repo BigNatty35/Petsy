@@ -8,7 +8,7 @@ class ReviewsIndex extends React.Component {
   }
 
   render() {
-    
+
     return (
       <div className="review-box">
           {/* <ReviewForm product={this.props.product} createReview={this.props.createReview} userId={this.props.userId}
@@ -17,7 +17,8 @@ class ReviewsIndex extends React.Component {
           <h1 className="reviews-h1">Reviews</h1>
           <li>
             {this.props.product.reviews.map(review => 
-            <Review review={review} key={review.id} deleteReview={this.props.deleteReview}/>)}
+            <Review review={review} key={review.id} deleteReview={this.props.deleteReview}
+            userId={this.props.userId}/>)}
           </li>
         </ul>
       </div>

@@ -5,9 +5,4 @@ class Api::SearchItemsController < ApplicationController
     render 'api/products/index'
   end
 
-  private
-
-  # def search_params
-  #   params.require(:product).permit(:search_name)
-  # end
 end
