@@ -37,8 +37,10 @@ Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshirt.jpg", description: "If one hawaiian shirt is concidered 'chill', imagine what a MULTI-PATTERN hawaiian shirt means? That's right, you guessed it. Now hurry.", title: "Shirt", price: 20.75, category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hugjacket.jpg", description: "Need a hug? Where this jacket at all times.", title: "Hugger Jacket", price: 45.99 , category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/shirtlessjacket.jpg", description: "Look at this. Beautiful, isn't it?", title: "Body Jacket", price: 26.99, category_id: cat4.id)
-Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglydress.jpg", description: "Dare to be different.", title: "Rare Dress", price: 67.99 , category_id: cat4.id)
-
+Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglydress.jpg", description: "Dare to be different.", title: "Rare Dress", price: 67.99 , category_id: cat4.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/purse-hat.jpg", description: "Keep your money on your mind.", title: "Purse Hat", price: 32.99 , category_id: cat4.id)
+Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ugg-sandals.jpg", description: "It's all about that comfort. NOTHING ELSE. ", title: "Ugg Sandals", price: 35.99 , category_id: cat4.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/catscarf.jpg", description: "Let the world know about your love for cats while staying warm and stylish!", title: "Cat Scarf", price: 50.99 , category_id: cat4.id)
 
 # food 3
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/canned_unicorn_meat2.jpg", description: "Feel the magic in every bite of this unicorn meat. There are crunchy horn bits in every bite. The meat is also easily spreadable for sandwiches and more.", title: "Unicorn Meat", price: 16.99, category_id: cat3.id)
@@ -47,10 +49,11 @@ Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hotdogs.jpg", description: "What is a hotdog made of exactly? Who cares! Here's a ton of them! ", title: "Hotdogs", price: 3.59, category_id: cat3.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/maggotcheese.jpg", description: "Known on the streets as 'Maggot Cheese' Casu marzu is a traditional Sardinian sheep milk cheese that contains live insect larvae (maggots). Derived from pecorino, casu marzu goes above and beyond typical fermentation to a stage of decomposition,
  brought about by the digestive action of the larvae of the cheese fly Piophila casei.", title: "Casu marzu", price: 100.75, category_id: cat3.id)
-
+Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/tequilashots.jpg", description: "14 shots of tequila.", title: "Tequila Shots", price: 9.00, category_id: cat3.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/gas-station-food.png", description: "Oh the delicious regret.", title: "Gas Station Food", price: 2.99, category_id: cat3.id)
 
 # pets 2
-Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/pirhana.jpg", description: "Hungry and aggressive. Strong jaws combined with finely serrated teeth make them prefect at tearing flesh. Fun for the family!", title: "Pirhana", price: 52.99, category_id: cat2.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Piranha.jpg", description: "Hungry and aggressive. Strong jaws combined with finely serrated teeth make them prefect at tearing flesh. Fun for the family!", title: "Pirhana", price: 52.99, category_id: cat2.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/cobra.jpg", description: "Cobras are famously friendly. They are companionable housemates who bond with the whole family. Especially small children", title: "King Cobra", price: 28.99, category_id: cat2.id)
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/crocodile.jpeg", description: "Sweet, soft and sensitive. This animal is the perfect cuddle partner on those cold winter days.", title: "Crocodile", price: 66.32, category_id: cat2.id)
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/grizzlybear.jpg", description: "Say hello to the newest member of the family. Easy to travel with, gets along well with others. Just make sure you feed it.", title: "Grizzly Bear", price: 21.90, category_id: cat2.id)
@@ -63,6 +66,10 @@ Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/shoebroom.jpg", description: "Become a cleaning machine! You're friends and family will always enjoy your company,", title: "Shoe Broom", price: 17.00, category_id: cat7.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/sodatap.jpg", description: "You deserve to drink soda like a boss.", title: "Soda Dispenser", price: 14.00, category_id: cat7.id)
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/snakepit.jpg", description: "Perfect for the backyard. Very little maintenance. ", title: "Snake Pit", price: 60.58, category_id: cat7.id)
+Product.create(user_id: user5.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hornets-nest.jpg", description: "Hornets nest #1 in home security.", title: "Hornets Nest", price: 44.52, category_id: cat7.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/cactus-sofa.jpg", description: "Fresh and textural. Cozy and comfortable. Warm and welcoming. That’s the essence of modern desert living—and the feeling you’ll get with the simply chic Cactus sofa. ", title: "Cactus Couch", price: 344.52, category_id: cat7.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Bacon-toothpaste.jpg", description: "rushing your teeth with a strip of fried bacon is tricky. If it's too crisp it will break apart as you brush and if it's too limp you won't be able to remove any of the plaque. So when it's time to brush your teeth, leave the bacon strips
+   for breakfast and try this Bacon Toothpaste. It's the perfect way to keep your teeth and gums healthy while coating your mouth with the delicious flavor of smoky meat.", title: "Bacon Toothpaste", price: 11.52, category_id: cat7.id)
 
 # jewelry 5
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat5.id)
@@ -71,7 +78,9 @@ Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/p
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/emojichain.jpg", description: "We use them everyday, why not wear them as well? ", title: "Emoji Necklace", price: 200.99, category_id: cat5.id)
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/spikebracelet.jpg", description: "Nothing says 'I love you' more then this bracelet. I promise. ", title: "Bracelet", price: 20.00, category_id: cat5.id)
 Product.create(user_id: user5.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyflowerwatch.JPG", description: "Perfect gift for that special someone.", title: "Flower Watch", price: 55.55, category_id: cat5.id)
-Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglywatch.jpg", description: "Perfect gift for that special someone.", title: "This watch is not for the faint of heart.", price: 150.25, category_id: cat5.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglywatch.jpg", description: "Perfect gift for that special someone.", title: "Everything Watch", price: 150.25, category_id: cat5.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/mouse-necklace.png", description: "Never leave your little friend at home again!", title: "Rodent Necklace", price: 421.25, category_id: cat5.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/chick-headband.png", description: "You love animals? Do you love chickens specifically? Prove it with this.", title: "Headband", price: 31.25, category_id: cat5.id)
 
 # vehicles 6
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/gasguzzler.jpg", description: "See you at the gas station", title: "Gas Guzzler", price: 48.99, category_id: cat6.id)
@@ -81,7 +90,9 @@ Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglybike.jpg", description: "Round tires are overrated. Welcome to the future.", title: "Fast Bike", price: 445.99, category_id: cat6.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/walkingbike.jpg", description: "Sometimes you just have to take a unique approach to life.", title: "Strange Bike", price: 300.75, category_id: cat6.id)
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/slowcar.jpg", description: "This is a masterpiece.", title: "Slow Car", price: 217.75, category_id: cat6.id)
-
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/trooper-car.jpg", description: "Be the talk of the town in this beautiful ride.", title: "The Stormtrooper", price: 217.75, category_id: cat6.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/shoe-car.jpg", description: "Heels on Wheels. That has a ring to it..", title: "High-Heel Car", price: 787.75, category_id: cat6.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/chair-car.jpg", description: "Guarenteed to change the way you feel about traffic.", title: "Comfy Car", price: 987.75, category_id: cat6.id)
 
 # electronics 8
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hoverboard.jpg", description: "Forever one of the hottest items on the market.", title: "Hoverboard", price: 40.00, category_id: cat8.id)
@@ -89,6 +100,8 @@ Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/twitterpeek.jpg", description: "A single purpose device, used only for Tweeting. I repeat, used ONLY for tweeting. Who cares if you can tweet from your smartphone.", title: "Twitter Peek", price: 350.99, category_id: cat8.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/photopencilcup.jpg", description: "You can pick out your favorite pencil while looking at your favorite photo. Awwwwwwwww", title: "Pencil Cup", price: 275.90, category_id: cat8.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/fingerdrum.jpg", description: "Houses your mouse and finger drumset. What more could you possible want in life?", title: "Finger Drumset", price:88.98, category_id: cat8.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/radio-toaster.jpg", description: "Listen to your favorite jam while you spread your favorite jam!", title: "Radio Toaster", price:69.98, category_id: cat8.id)
+
 # entertainment 1
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Anaconda3.jpg", description: "A mercenary-for-hire accepts a mission from a billionaire to capture a dangerous snake that could possibly help cure a terminal illness.", title: "Anaconda: The Offspring", price: 6.99, category_id: cat1.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/JTalbum.jpg", description: "Justin Timberlake's latest album. Currently crying a river.", title: "Man of the Woods", price: 1.57, category_id: cat1.id)
@@ -97,4 +110,10 @@ Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/choresgame.jpg", description: "Your favorite chores in the form of a video game. Extremely lit.", title: "Extreme Chores: The Game", price: 32.99, category_id: cat1.id)
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Yeezus.png", description: "I miss the old Kanye.", title: "Yeezus", price: 6.25, category_id: cat1.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/theFive.jpg", description: "Every Episode of 'The Five'. You won't regret this.", title: "The Five", price: 51.99, category_id: cat1.id)
-Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/thesoup.jpg", description: "Every Episode of 'The Soup'. Hopefully this show will make you laugh or something.", title: "The Soup", price: 37.95, category_id: cat1.id)
+Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/thesoup.jpg", description: "Every Episode of 'The Soup'. Hopefully this show will make you laugh or something.", title: "The Soup", price: 37.95, category_id: cat1.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/The_Ring_VHS.jpg", description: "You ever see that movie the ring? Where if you watched this cursed videotape, you die in 7 days? Well this is that videotape. ", title: "Cursed VHS", price: 37.95, category_id: cat1.id)
+Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ouija-board.jpg", description: "Dim the lights and have a romantic game night with that special someone.", title: "Ouija Board", price: 12.95, category_id: cat1.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/giant-beach-ball.jpg", description: "Small beachballs are a thing of the past.", title: "Beachball", price: 12.95, category_id: cat1.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/oneplayer-pong.jpg", description: "Single player ping-pong. As fun as it looks!", title: "Ping-Pong", price: 19.95, category_id: cat1.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/duck-dynasty-game.jpg", description: "Engage in a variety of mini games and 50+ quests that include Duck Huntin, Fishin, Froggin and Shootin as you explore the town of Duckville and the wilderness that surrounds it in this community simulator.",
+   title: "Duck Dynasty", price: 5.95, category_id: cat1.id)
