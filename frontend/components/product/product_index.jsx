@@ -36,24 +36,22 @@ class ProductIndex extends React.Component {
     
           <div className="splash-page">
             <div className="splash-left">
+              <div className="splashleft-pic"></div>
               <div className="splashleft-words">
                 <div className="left-words">
-                <span>Nothing but pure regret awaits you.</span>
+                  <span>Nothing but pure regret awaits you.</span>
                 </div>
                 <div className="look-inside">
-                <span>Take a look inside <i className="right"></i> </span>
+                  <span>Take a look inside <i className="right"></i> </span>
                 </div>
-              </div>
-              <div className="splashleft-pic">
-                <img src="https://s3-us-west-1.amazonaws.com/productpics35/regretman2.jpeg"/>
               </div>
             </div>
             <div className="splash-right">
               <div className="splash-top">
-              <img src={"https://s3-us-west-1.amazonaws.com/productpics35/desertjunk.jpeg"}/>
-              <div className="Woohoo-box">
-              <span>Woohoo! These regrets ship for free.</span>
-              </div>
+              
+                <div className="Woohoo-box">
+                  <span>Woohoo! These regrets ship for free.</span>
+                </div>
               
               </div>
               <div className="splash-bottom">

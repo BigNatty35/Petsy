@@ -23,12 +23,14 @@ class CategoryShowContainer extends React.Component {
     const filtered = this.props.products.filter(el =>
       el.category_name === this.props.category_id);
     return (
+      <main>
       <div className="category-box">
         <div>
           {filtered.map(product =>
             <ProductIndexItem product={product} key={product.id} />)}
         </div>
       </div>
+      </main>
     );
   }
 }
