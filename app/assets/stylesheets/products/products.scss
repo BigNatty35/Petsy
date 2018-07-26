@@ -41,6 +41,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.item-info span {
+  margin-bottom: 5px;
 }
 .index-img {
   width: 180px;
@@ -48,7 +53,7 @@
   margin-left: 20px;
   // border: 1px solid #666666;
   margin-right: 20px;
-  
+  margin-bottom: 50px; 
 }
 
 // .leftside-img {
@@ -78,6 +83,7 @@
   flex-direction: column;
   justify-content: flex-start;
   border: 1px soild lightgray;
+  margin-bottom: 50px;
 }
 
 
