@@ -42,6 +42,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  
+}
+
+.index-title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .item-info span {
@@ -54,6 +61,10 @@
   // border: 1px solid #666666;
   margin-right: 20px;
   margin-bottom: 50px; 
+}
+
+.index-price {
+  font-size: 14px;
 }
 
 // .leftside-img {

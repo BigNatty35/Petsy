@@ -1,0 +1,25 @@
+.cant-find {
+  display: flex;
+  justify-content: center;
+  background-image: url('https://s3-us-west-1.amazonaws.com/productpics35/jordan-crying.jpg');
+  background-size: cover;
+  background-position: center center;
+  margin-top: 30px;
+  width: 500px;
+  height: 590px;
+  border-radius: 50%;
+}
+
+.cant-find-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.cant-find-box div {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
