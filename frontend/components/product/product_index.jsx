@@ -64,7 +64,7 @@ class ProductIndex extends React.Component {
             <ul className="check-list">
               <li>
                 <div>
-                  <i class="fas fa-check"></i>
+                  <i className="fas fa-check"></i>
                   <p className="checklist-title">Unique everything</p>
                 </div>
               <p className="paragraph">We have millions of one-of-a-kind items, 
@@ -74,21 +74,21 @@ class ProductIndex extends React.Component {
               
               <li>
                 <div>
-                  <i class="fas fa-check"></i>
+                  <i className="fas fa-check"></i>
                   <p className="checklist-title">Independent sellers</p>
                 </div>
                 <p className="paragraph">
-                  Buy directly from someone who put their heart and soul into making something special.
+                  Buy directly from someone who completely regrets their purchase, and is willing to pass that feeling along.
                 </p>
               </li>
 
               <li>
                 <div>
-                  <i class="fas fa-check"></i>
+                  <i className="fas fa-check"></i>
                   <p className="checklist-title">Secure shopping</p>
                 </div>
                 <p className="paragraph">
-                We use best-in-class technology to protect your transactions.
+                We use best-in-class technology to protect you from getting scammed.
                 </p>
               </li>
             </ul>
