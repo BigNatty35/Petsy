@@ -43,7 +43,7 @@ class CategoryShowContainer extends React.Component {
 
 
 const msp = (state, ownProps) => {
- 
+
   return {
     category_id: ownProps.match.params.category_id,
     products: Object.values(state.entities.products)

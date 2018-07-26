@@ -9,13 +9,13 @@ class SearchShowContainer extends React.Component {
   }
 
   render() {
-    if (this.props.searchItems.length === 0) {
-      debugger
+    const query = this.props.searchItems[0];
+    if (typeof query === "string") {
       return (
         <main>
           <div className="cant-find-box">
     
-            <div>Item not found!</div> 
+            <div>"{query}" not found!</div> 
             
             <div className="cant-find"></div>
           </div>

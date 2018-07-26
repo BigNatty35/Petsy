@@ -36,7 +36,7 @@ class CartShow extends React.Component {
           <h1 className="total-header">{total}</h1>
           </header>
           <div className="keep-shoppingbox">
-            <Link to='/'><h2>Keep Shopping</h2></Link>
+            <Link to='/'><h2 className="header-button">Keep Shopping</h2></Link>
           </div>
           </div>
           <div className="main-cart-area">
