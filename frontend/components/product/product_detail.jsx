@@ -18,6 +18,7 @@ class ProductDetail extends React.Component {
 
     this.props.fetchProduct(this.props.match.params.product_id);
      $(document).scrollTop(0);
+     this.props.clearErrors();
   }
 
 

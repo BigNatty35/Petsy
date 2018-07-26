@@ -3,8 +3,8 @@ import {connect} from 'react-redux';
 import {fetchProduct} from '../../actions/product_actions';
 import {createCartItem} from '../../actions/cart_actions';
 import {withRouter} from 'react-router-dom';
-import {fetchReviews} from '../../actions/review_actions';
-import {createReview} from '../../actions/review_actions';
+import { fetchReviews, createReview} from '../../actions/review_actions';
+import {clearErrors} from '../../actions/review_actions';
 
 
 const msp = (state, ownProps) => {
@@ -27,7 +27,8 @@ const mdp = dispatch => {
     fetchProduct: id => dispatch(fetchProduct(id)),
     createCartItem: item => dispatch(createCartItem(item)),
     fetchReviews: (id) => dispatch(fetchReviews(id)),
-    createReview: review => dispatch(createReview(review))
+    createReview: review => dispatch(createReview(review)),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 
