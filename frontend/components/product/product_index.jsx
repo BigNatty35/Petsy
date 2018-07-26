@@ -59,6 +59,41 @@ class ProductIndex extends React.Component {
               </div>
             </div>
           </div>
+          
+
+            <ul className="check-list">
+              <li>
+                <div>
+                  <i class="fas fa-check"></i>
+                  <p className="checklist-title">Unique everything</p>
+                </div>
+              <p className="paragraph">We have millions of one-of-a-kind items, 
+              so you can find whatever you need (or really, really want).
+              </p>
+              </li>
+              
+              <li>
+                <div>
+                  <i class="fas fa-check"></i>
+                  <p className="checklist-title">Independent sellers</p>
+                </div>
+                <p className="paragraph">
+                  Buy directly from someone who put their heart and soul into making something special.
+                </p>
+              </li>
+
+              <li>
+                <div>
+                  <i class="fas fa-check"></i>
+                  <p className="checklist-title">Secure shopping</p>
+                </div>
+                <p className="paragraph">
+                We use best-in-class technology to protect your transactions.
+                </p>
+              </li>
+            </ul>
+
+         
            <div className="index-header">
              <h2>Popular Items</h2>
             </div>
