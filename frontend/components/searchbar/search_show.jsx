@@ -10,13 +10,13 @@ class SearchShowContainer extends React.Component {
 
   render() {
     if (this.props.searchItems.length === 0) {
+      debugger
       return (
         <main>
           <div className="cant-find-box">
     
             <div>Item not found!</div> 
             
-            {/* <img src="https://s3-us-west-1.amazonaws.com/productpics35/jordan-crying.jpg" alt=""/> */}
             <div className="cant-find"></div>
           </div>
         </main>

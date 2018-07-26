@@ -1,6 +1,6 @@
 import React from 'react';
 import CartItem from './cart_item';
-
+import {Link} from 'react-router-dom';
 
 class CartShow extends React.Component {
   constructor(props) {
@@ -35,6 +35,9 @@ class CartShow extends React.Component {
           <header className="cart-header">
           <h1 className="total-header">{total}</h1>
           </header>
+          <div className="keep-shoppingbox">
+            <Link to='/'><h2>Keep Shopping</h2></Link>
+          </div>
           </div>
           <div className="main-cart-area">
             <div className='cartItems-list'>
