@@ -30,21 +30,18 @@ class CartItem extends React.Component {
 
     return (
     <div className="cartItem-info">
+    
           <div className="sec0">
+          <div className="sec1">
+            {this.props.cartItem.product_name}
+
+          </div>
             <div className="cart-image">
               <img src={this.props.cartItem.product_img} alt="" />
             </div>
-            <div className="remove-item-box">
-              <button className="remove-item" onClick={() => {this.props.deleteCartItem(this.props.cartItem.id); 
-                this.props.clearErrors();}}>Remove
-              </button>
-            </div>
           </div>
 
-        <div className="sec1">
-          {this.props.cartItem.product_name}
-         
-        </div>
+      
 
           <div className="sec2">
             <form onSubmit={this.handleSubmit.bind(this)}>
@@ -69,6 +66,13 @@ class CartItem extends React.Component {
               <div className="quant-submit">
                 <input type="submit" name="update" value="update"/>
               </div>
+            <div className="remove-item-box">
+              <button className="remove-item" onClick={() => {
+                this.props.deleteCartItem(this.props.cartItem.id);
+                this.props.clearErrors();
+              }}>Remove
+              </button>
+            </div>
             </form>
           </div>
 
