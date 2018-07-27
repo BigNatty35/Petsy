@@ -71,9 +71,11 @@ class CartItem extends React.Component {
             </select>
             </div>
               </label>
-              <div className="quant-submit">
-                <input type="submit" name="update" value="update"/>
-              </div>
+              {/* <div className="quant-submit"> */}
+                <button className="quant-submit" onClick={this.handleSubmit.bind(this)}>
+                update
+                </button>
+              {/* </div> */}
            
             </form>
           </div>
