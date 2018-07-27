@@ -19,11 +19,13 @@ class ProductIndexShowContainer extends React.Component {
    render() {
      return (
        <main>
-         <div className="category-box">
-           <div>
-             {this.props.products.map(product =>
-               <ProductIndexItem product={product} key={product.id} />)}
-           </div>
+         <div className="list-box">
+           <ul className="items-list">
+             <li className="index-items">
+               {this.props.products.map(product => <ProductIndexItem product={product} key={product.id} />
+               )}
+             </li>
+           </ul>
          </div>
        </main>
      );
