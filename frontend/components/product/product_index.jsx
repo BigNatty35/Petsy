@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductIndexItem from "./product_index_item";
-
+import {Link} from 'react-router-dom';
 
 class ProductIndex extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ class ProductIndex extends React.Component {
                   <span>Nothing but pure regret awaits you.</span>
                 </div>
                 <div className="look-inside">
-                  <span>Take a look inside <i className="right"></i> </span>
+                 <Link to='/products'> <span>Take a look inside <i className="right"></i> </span></Link>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ class ProductIndex extends React.Component {
            <div className="index-header">
              <h2>Popular Items</h2>
             </div>
-        <div className="list-box">
+            <div className="list-box">
             <ul className="items-list">
             <li className="index-items">
             {this.state.products.map(product => <ProductIndexItem product={product} key={product.id}/>
