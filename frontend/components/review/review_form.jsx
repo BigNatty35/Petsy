@@ -48,7 +48,6 @@ class ReviewForm extends React.Component {
   }
 
   render() {
-    console.log(this.state.body);
     let one = <span className="stars">&#9733;</span>;
     let two = <span className="stars">&#9733;&#9733;</span>;
     let three = <span className="stars">&#9733;&#9733;&#9733;</span>;

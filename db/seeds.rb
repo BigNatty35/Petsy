@@ -51,6 +51,10 @@ Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
  brought about by the digestive action of the larvae of the cheese fly Piophila casei.", title: "Casu marzu", price: 100.75, category_id: cat3.id)
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/tequilashots.jpg", description: "14 shots of tequila.", title: "Tequila Shots", price: 9.00, category_id: cat3.id)
 Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/gas-station-food.png", description: "Oh the delicious regret.", title: "Gas Station Food", price: 2.99, category_id: cat3.id)
+Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/mcSpeghetti.jpg", description: "There's vomit on his sweater already, McSpaghetti", title: "McSpaghetti", price: 5.99, category_id: cat3.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/icecream-+cheeseburger.jpg", description: "Bacon cheeseburger topped with a generous scoop of deep-fried ice cream battered in corn flakes and cinnamon, lettuce, tomatoes and onions.", title: "Ice Cream Cheeseburger", price: 5.99, category_id: cat3.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/deepfried-butter.jpg", description: "This is a whole stick of butter on a stick dipped in a cinnamon honey batter and deep-fried. And then coated in a sugary glaze. It costs four dollars..", title: "Deep Fried Butter", price: 3.99, category_id: cat3.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/black-cheeseburger.jpg", description: "Black buns..Black sauce.. Black cheese..", title: "The Black Burger", price: 10.99, category_id: cat3.id)
 
 # pets 2
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Piranha.jpg", description: "Hungry and aggressive. Strong jaws combined with finely serrated teeth make them prefect at tearing flesh. Fun for the family!", title: "Pirhana", price: 52.99, category_id: cat2.id)
@@ -74,8 +78,15 @@ Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/snakepit.jpg", description: "Perfect for the backyard. Very little maintenance. ", title: "Snake Pit", price: 60.58, category_id: cat7.id)
 Product.create(user_id: user5.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hornets-nest.jpg", description: "Hornets nest #1 in home security.", title: "Hornets Nest", price: 44.52, category_id: cat7.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/cactus-sofa.jpg", description: "Fresh and textural. Cozy and comfortable. Warm and welcoming. That’s the essence of modern desert living—and the feeling you’ll get with the simply chic Cactus sofa. ", title: "Cactus Couch", price: 344.52, category_id: cat7.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/laundry-folding-machine.jpg", description: "We can all agree that folding laundry would be more fun if a robot did it. A very expensive robot. ", title: "Laundry Folder", price: 900.52, category_id: cat7.id)
+Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/juice-press.jpg", description: "Tired of the mess from traditional juicers? Do you wish there was a way to get fresh cold pressed juice with out having to shop for the produce?
+  Well it's Juicero to the rescue! This Wi-Fi connected juicer uses single-serving packets of pre-juiced fruits and vegetables sold exclusively by the company by subscription. Make sure you let Juicero do all the work! Make sure you DON'T hand-squeeze the packets.. ", title: "Juicero", price: 699.52, category_id: cat7.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Bacon-toothpaste.jpg", description: "rushing your teeth with a strip of fried bacon is tricky. If it's too crisp it will break apart as you brush and if it's too limp you won't be able to remove any of the plaque. So when it's time to brush your teeth, leave the bacon strips
    for breakfast and try this Bacon Toothpaste. It's the perfect way to keep your teeth and gums healthy while coating your mouth with the delicious flavor of smoky meat.", title: "Bacon Toothpaste", price: 11.52, category_id: cat7.id)
+Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/watermelon-cooler.jpg", description: "Keep your beloved watermelon nice & cool everywhere you go with this state of the art portable watermelon cooler.", title: "Watermelon Cooler", price: 144.52, category_id: cat7.id)
+Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/meat-nuckles.jpg", description: "This versatile Meat Tenderizer will tenderize or flatten meat for your favorite recipe. Features both a flat and a raised surface for all types and cuts of meat. 
+  The brass handle provides a comfortable experience when using the tenderizer. Also a useful tool for crushing spices. Hand wash", title: "Meat Tenderizer", price: 37.52, category_id: cat7.id)
+
 
 # jewelry 5
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat5.id)
@@ -103,10 +114,18 @@ Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 # electronics 8
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hoverboard.jpg", description: "Forever one of the hottest items on the market.", title: "Hoverboard", price: 40.00, category_id: cat8.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ipoddockheadphones.jpg", description: "Don't worry about how it looks or how much it weighs. Just know that this is the future my friend.", title: "Dock Headphones", price: 89.99, category_id: cat8.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ipod-hoodies.jpg", description: " Your phone has had your back from the start. Your phone has been there no matter what. It's about time you do something special for you good friend. This larger cut hoodie has a thick fleece construction cut cross 
+   weave to prevent shrinkage and durable reinforced seams for a long lasting wear. Show your phone some love.", title: "iPhone hoodie", price: 89.99, category_id: cat8.id)
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/twitterpeek.jpg", description: "A single purpose device, used only for Tweeting. I repeat, used ONLY for tweeting. Who cares if you can tweet from your smartphone.", title: "Twitter Peek", price: 350.99, category_id: cat8.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/photopencilcup.jpg", description: "You can pick out your favorite pencil while looking at your favorite photo. Awwwwwwwww", title: "Pencil Cup", price: 275.90, category_id: cat8.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/fingerdrum.jpg", description: "Houses your mouse and finger drumset. What more could you possible want in life?", title: "Finger Drumset", price:88.98, category_id: cat8.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/furby.jpg", description: " When you first meet your FURBY, it will speak FURBISH. But the more you play with FURBY, the more English it will start speaking. Machine learning at it's finest.", title: "Furby", price: 40.98, category_id: cat8.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/radio-toaster.jpg", description: "Listen to your favorite jam while you spread your favorite jam!", title: "Radio Toaster", price:69.98, category_id: cat8.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/slrlens-phone.jpg", description: "Take professional quality close-up images. Discover a whole new world of mobile photography where everything becomes awesome.", title: "SLR Phone lens", price:89.98, category_id: cat8.id)
+Product.create(user_id: user5.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/remote-holder.jpg", description: "Built to fit any type of remote control including TV Remotes, Stereo Remotes, Soundbar Remotes, Game Console Media Remotes and more.
+   It can also hold cell phones and other small media devices.", title: "Remote Holder", price:29.98, category_id: cat8.id)
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/mouse-pocket-scale.jpg", description: "The sleek, compact mouse provides rubberized sides and gently curved contours that fit perfectly in the palm of the hand.
+   With its 0.01g accuracy and 200g (1000ct) capacity, this pocket sized digital scale is ideal for weighing precious metals (gold, silver, platinum), gems, stones, medication, and reloading.", title: "Mouse Scale", price:35.98, category_id: cat8.id)
 
 # entertainment 1
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/Anaconda3.jpg", description: "A mercenary-for-hire accepts a mission from a billionaire to capture a dangerous snake that could possibly help cure a terminal illness.", title: "Anaconda: The Offspring", price: 6.99, category_id: cat1.id)
@@ -123,3 +142,9 @@ Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/oneplayer-pong.jpg", description: "Single player ping-pong. As fun as it looks!", title: "Ping-Pong", price: 19.95, category_id: cat1.id)
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/duck-dynasty-game.jpg", description: "Engage in a variety of mini games and 50+ quests that include Duck Huntin, Fishin, Froggin and Shootin as you explore the town of Duckville and the wilderness that surrounds it in this community simulator.",
    title: "Duck Dynasty", price: 5.95, category_id: cat1.id)
+
+
+
+
+
+  

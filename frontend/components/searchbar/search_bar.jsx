@@ -26,7 +26,6 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    console.log(this.state.query);
     return (
       <form className="searchform" onSubmit={this.onFormSubmit} >
       <div className="searchbox">
