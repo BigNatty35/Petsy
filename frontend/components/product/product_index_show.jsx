@@ -36,6 +36,11 @@ class ProductIndexShowContainer extends React.Component {
 
 
 
+
+
+
+
+
 const msp = state => {
   return {
     products: Object.values(state.entities.products)

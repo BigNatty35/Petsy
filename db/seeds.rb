@@ -32,7 +32,7 @@ cat8 = Category.create(category_name: "electronics")
 
 
 # clothes 4
-Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshoes.jpg", description: "Lightweight and collapsible, these kicks show off a striking rhinestone design. These shoes feature a very exculsive springy heel..enough said.", title: "Great Shoes", price: 18.33, category_id: cat4.id)
+Product.create(user_id: user3.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshoez.jpg", description: "Lightweight and collapsible, these kicks show off a striking rhinestone design. These shoes feature a very exculsive springy heel..enough said.", title: "Great Shoes", price: 18.33, category_id: cat4.id)
 Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/martini-glass-hat1.jpg", description: "Extremely rare head piece.", title: "Rare Hat", price: 37.99, category_id: cat4.id)
 Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/uglyshirt.jpg", description: "If one hawaiian shirt is concidered 'chill', imagine what a MULTI-PATTERN hawaiian shirt means? That's right, you guessed it. Now hurry.", title: "Shirt", price: 20.75, category_id: cat4.id)
 Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hugjacket.jpg", description: "Need a hug? Where this jacket at all times.", title: "Hugger Jacket", price: 45.99 , category_id: cat4.id)
@@ -89,7 +89,7 @@ Product.create(user_id: user2.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 
 
 # jewelry 5
-Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/rustychain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat5.id)
+Product.create(user_id: user6.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/newchain.JPG", description: "Rusty. Very Rusty.", title: "Chain", price: 8.99, category_id: cat5.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/beer+ring.jpg", description: "Perfect for any formal occasion. Makes a great talking piece during job interviews.", title: "Beer Ring", price: 24.78, category_id: cat5.id)
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/corncobnecklace.jpg", description: "Tastes just like it looks. GREAT!", title: "Cob Necklace", price: 45.88, category_id: cat5.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/emojichain.jpg", description: "We use them everyday, why not wear them as well? ", title: "Emoji Necklace", price: 200.99, category_id: cat5.id)
@@ -114,7 +114,7 @@ Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/pr
 # electronics 8
 Product.create(user_id: user10.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/hoverboard.jpg", description: "Forever one of the hottest items on the market.", title: "Hoverboard", price: 40.00, category_id: cat8.id)
 Product.create(user_id: user9.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ipoddockheadphones.jpg", description: "Don't worry about how it looks or how much it weighs. Just know that this is the future my friend.", title: "Dock Headphones", price: 89.99, category_id: cat8.id)
-Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ipod-hoodies.jpg", description: " Your phone has had your back from the start. Your phone has been there no matter what. It's about time you do something special for you good friend. This larger cut hoodie has a thick fleece construction cut cross 
+Product.create(user_id: user4.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/ipod-hoodies.jpg", description: " Your phone has had your back from the start. Your phone has been there no matter what. It's about time you do something special for your good friend. This larger cut hoodie has a thick fleece cut cross 
    weave to prevent shrinkage and durable reinforced seams for a long lasting wear. Show your phone some love.", title: "iPhone hoodie", price: 89.99, category_id: cat8.id)
 Product.create(user_id: user7.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/twitterpeek.jpg", description: "A single purpose device, used only for Tweeting. I repeat, used ONLY for tweeting. Who cares if you can tweet from your smartphone.", title: "Twitter Peek", price: 350.99, category_id: cat8.id)
 Product.create(user_id: user8.id, img_url:"https://s3-us-west-1.amazonaws.com/productpics35/photopencilcup.jpg", description: "You can pick out your favorite pencil while looking at your favorite photo. Awwwwwwwww", title: "Pencil Cup", price: 275.90, category_id: cat8.id)

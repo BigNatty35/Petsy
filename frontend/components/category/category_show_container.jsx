@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/product_actions';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import {ProductIndexItem} from '../product/product_index_item';
 
 
@@ -27,7 +27,18 @@ class CategoryShowContainer extends React.Component {
         <div className="list-box">
           <ul className="items-list">
             <li className="index-items">
-              {filtered.map(product => <ProductIndexItem product={product} key={product.id} />
+              {filtered.map(product => 
+
+                <div className="list-item">
+                  <div className="category-img">
+                    <Link to={`/product/${product.id}`}><img className="indexItem-img" src={product.img_url} alt="" /></Link>
+                    <div className="item-info">
+                      <span className="index-title">{product.title}</span>
+                      <span className="index-price">${product.price}</span>
+                    </div>
+                  </div>
+                </div>
+
               )}
             </li>
           </ul>
