@@ -31,7 +31,7 @@ class CategoryShowContainer extends React.Component {
 
                 <div className="list-item">
                   <div className="category-img">
-                    <Link to={`/product/${product.id}`}><img className="indexItem-img" src={product.img_url} alt="" /></Link>
+                    <Link to={`/product/${product.id}`}><img className="categoryItem-img" src={product.img_url} alt="" /></Link>
                     <div className="item-info">
                       <span className="index-title">{product.title}</span>
                       <span className="index-price">${product.price}</span>
