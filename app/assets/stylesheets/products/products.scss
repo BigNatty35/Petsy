@@ -79,8 +79,13 @@
   justify-content: center;
   width: 100vw;
   padding: 3px;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.detail-main {
+  min-height: calc(100vh - 183px);
+  background-color: ivory;
 }
 
 .indexItem-img {

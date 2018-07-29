@@ -39,6 +39,7 @@ class SessionButtons extends React.Component {
           <div className="cart-sec">
             <button className="header-button" onClick={() => this.props.openModal('Sign In')}>Sign in</button>
           </div>
+        <div className="cart-line"></div>
           <div className="cart-sec">
             <Link to='/cart'><i className="fas fa-shopping-cart fa-lg"></i>
               <br />

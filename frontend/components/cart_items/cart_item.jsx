@@ -24,7 +24,7 @@ class CartItem extends React.Component {
 
   render() {
     const each = this.state.quantity > 1 ?
-     `(${this.props.cartItem.price} each)` : undefined;
+     `($${this.props.cartItem.price} each)` : undefined;
     
  
 

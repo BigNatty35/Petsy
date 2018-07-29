@@ -23,7 +23,7 @@ class CategoryShowContainer extends React.Component {
     const filtered = this.props.products.filter(el =>
       el.category_name === this.props.category_id);
     return (
-      <main>
+      <main className="category-main">
         <div className="list-box">
           <ul className="items-list">
             <li className="index-items">

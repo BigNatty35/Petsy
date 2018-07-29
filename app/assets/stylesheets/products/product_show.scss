@@ -1,11 +1,13 @@
 .listing-body {
-  // border: 1px solid red;
-  margin-top: 120px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
-  min-width: 900px;
-  box-shadow: 0px 0px 2px grey;
+ margin-top: 120px;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    margin-bottom: 30px;
+    min-width: 900px;
+    box-shadow: 0 0 5px grey;
+    width: 60%;
+    margin: 5% auto;
+    background-color: white;
 }
 
 .show-nav {
@@ -33,6 +35,8 @@
   color: white;
   display: flex;
   justify-content: center;
+  border-radius: 4px;
+  margin-top: 30px;
 }
 
 .rightside-buttons {
@@ -93,8 +97,8 @@
   width: 100%;
   max-height: 540px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 
 
@@ -125,7 +129,6 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-left: 10px;
-  height: 125px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -141,15 +144,22 @@
   text-align: right;
   margin-left: 5px;
   width: 35px;
+  // margin-top: 30px;
 };
+
+.cart-quantity {
+  margin-top: 30px;
+}
 
 .shopping-cart-form .cart-quantity {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  margin-top: 30px;
 }
 
 .leftshow-img {
   display: block;
   width: 70%;
+  border-radius: 4px;
 }

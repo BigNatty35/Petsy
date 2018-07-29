@@ -26,15 +26,15 @@ class CartShow extends React.Component {
   }
   
   render() {
-
     let totalSum = 0;
     this.props.cartItems.forEach(cartItem => {
       totalSum += (cartItem.price * cartItem.quantity);
     });
+    let message = this.props.cartItems.length >= 1 ? `$${totalSum.toFixed(2)} is your total` : "There is nothing in your cart!";
     const total = this.props.cartItems.length != 1 ? `${this.props.cartItems.length} items in your cart` :
     "1 item in your cart";
     return (
-      <main>
+      <main className="main-cart">
         <div className="cartItems-box">
           <div className="header-box">
           <header className="cart-header">
@@ -54,10 +54,10 @@ class CartShow extends React.Component {
             </div>
             <div className="checkout">
               <div className="grandTotal">
-                <h1>${totalSum.toFixed(2)} is your total </h1>
+                <h1>{message}</h1>
               </div>
               <div>
-                <button onClick={this.checkOut}>Checkout</button>
+                {/* <button onClick={this.checkOut}>Checkout</button> */}
               </div>
           </div>
         </div>
