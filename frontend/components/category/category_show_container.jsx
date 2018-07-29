@@ -26,7 +26,7 @@ class CategoryShowContainer extends React.Component {
       <main className="category-main">
         <div className="list-box">
           <ul className="items-list">
-            <li className="index-items">
+            <li className="category-items">
 
               {filtered.map(product => 
                 <div className="list-item" key={product.id}>

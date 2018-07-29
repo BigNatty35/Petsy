@@ -23,13 +23,10 @@ class Product < ApplicationRecord
   has_many :cart_items
   has_many :reviews
 
-  pg_search_scope :search_by_title, :against => :title
+  pg_search_scope :search_by_title, :against => [:title, :description],
+  :using => {
+    :tsearch => {:prefix => true}
+  }
 
-  # def self.search_product(search_params)
-  #   if search_params
-  #     query = '%' + product_params.downcase + '%'
-  #     @search_products = Product.where('lower(title) LIKE ?', search_param).to_a
-  #   end
-  # end
   
 end

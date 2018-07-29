@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 class CartItem extends React.Component {
   constructor(props) {
@@ -36,9 +36,11 @@ class CartItem extends React.Component {
             {this.props.cartItem.product_name}
 
           </div>
+          <Link to={`/product/${this.props.cartItem.product_id}`}>
             <div className="cart-image">
               <img src={this.props.cartItem.product_img} alt="" />
             </div>
+            </Link>
           <div className="remove-item-box">
             <button className="remove-item" onClick={() => {
               this.props.deleteCartItem(this.props.cartItem.id);

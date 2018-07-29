@@ -31,3 +31,14 @@
   min-height: calc(100vh - 183px);
   // background-color: ivory
 }
+
+.category-items {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  padding: 3px;
+  margin-left: 3%;
+  margin-right: 3%;
+}

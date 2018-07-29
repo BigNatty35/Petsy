@@ -32,6 +32,7 @@ class ProductIndex extends React.Component {
   render() {
     
     return (
+      <main>
       <div className="list-body">
     
           <div className="splash-page">
@@ -106,7 +107,7 @@ class ProductIndex extends React.Component {
           </ul>
         </div>
       </div>
-    
+    </main>
     );
   }
 }
