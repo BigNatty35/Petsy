@@ -136,10 +136,38 @@ i {
   font-size: 14px;
 }
 
-.look-inside:hover {
-  text-decoration: underline;
-  color: white;
-}
+
+.look-inside {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 3px;
+      outline: none;
+    }
+
+    .look-inside:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 1px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+    }
+
+    .look-inside:hover {
+      cursor: pointer;
+    }
+
+    .look-inside:hover:after {
+      width: 90%;
+      background: white;
+    }
+
+
+// .look-inside:hover {
+//   text-decoration: underline;
+//   color: white;
+// }
 
 .splash-bottom {
   width: 100%;

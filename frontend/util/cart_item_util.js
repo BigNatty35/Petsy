@@ -32,6 +32,14 @@ export const deleteCartItem = (id) => {
   });
 };
 
+export const deleteCartItems = (itemIds) => {
+  return $.ajax({
+    method: "DELETE",
+    url: `/api/cart_items/destroy_all`,
+    data: {itemIds}
+  });
+};
+
 export const updateCartItem = (item) => {
   return $.ajax({
     method: "PATCH", 

@@ -4,6 +4,7 @@ export const RECEIVE_CART_ITEM = "RECEIVE_CART_ITEM";
 export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
 export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
+export const CLEAR_CART = "CLEAR_CART";
 
 export const receiveCartItems = (cartItems) => {
   return {
@@ -44,6 +45,14 @@ export const clearErrors = () => {
   };
 };
 
+
+export const clearCart = (empty) => {
+  return {
+    type: CLEAR_CART,
+    empty
+  };
+};
+
 export const fetchCartItems = () => {
   return dispatch => {
     return CartUtil.fetchCartItems().then(cartItems => {
@@ -81,6 +90,13 @@ export const deleteCartItem = id => {
   return dispatch => {
     return CartUtil.deleteCartItem(id).then(itemId => {
       return dispatch(removeCartItem(itemId));
+    });
+  };
+};
+export const deleteCartItems = array => {
+  return dispatch => {
+    return CartUtil.deleteCartItems(array).then(() => {
+      return dispatch(clearCart({}));
     });
   };
 };

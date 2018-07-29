@@ -18,6 +18,33 @@
   border-top: 1px solid lightgrey;
   letter-spacing: 1px;
   font-weight: 200;
+
+  button {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 3px;
+      outline: none;
+    }
+
+    button:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    button:hover:after {
+      width: 100%;
+      background: rgb(242, 88, 30);
+    }
+
 }
 .nav-list li {
   display: flex;
@@ -26,12 +53,12 @@
 }
 
 
-.nav-list button:hover {
-  text-decoration: underline;
-  text-decoration-color: #f45800;
-  transition: 0.3s;
-  cursor: pointer;
-}
+// .nav-list button:hover {
+//   text-decoration: underline;
+//   text-decoration-color: #f45800;
+//   transition: 0.3s;
+//   cursor: pointer;
+// }
 
 
 

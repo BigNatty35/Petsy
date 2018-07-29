@@ -10,7 +10,7 @@ class CartShow extends React.Component {
       total: 0
     };
 
- 
+    this.checkOut = this.checkOut.bind(this);
   }
 
   componentDidMount() {
@@ -20,8 +20,13 @@ class CartShow extends React.Component {
 
   }
 
+  checkOut() {
+    this.props.deleteCartItems(this.props.cartItemIds);
+    this.props.history.push('/checkout');
+  }
   
   render() {
+
     let totalSum = 0;
     this.props.cartItems.forEach(cartItem => {
       totalSum += (cartItem.price * cartItem.quantity);
@@ -50,6 +55,9 @@ class CartShow extends React.Component {
             <div className="checkout">
               <div className="grandTotal">
                 <h1>${totalSum.toFixed(2)} is your total </h1>
+              </div>
+              <div>
+                <button onClick={this.checkOut}>Checkout</button>
               </div>
           </div>
         </div>

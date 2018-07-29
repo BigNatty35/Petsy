@@ -27,9 +27,9 @@ class CategoryShowContainer extends React.Component {
         <div className="list-box">
           <ul className="items-list">
             <li className="index-items">
-              {filtered.map(product => 
 
-                <div className="list-item">
+              {filtered.map(product => 
+                <div className="list-item" key={product.id}>
                   <div className="category-img">
                     <Link to={`/product/${product.id}`}><img className="categoryItem-img" src={product.img_url} alt="" /></Link>
                     <div className="item-info">
@@ -38,8 +38,9 @@ class CategoryShowContainer extends React.Component {
                     </div>
                   </div>
                 </div>
-
               )}
+
+                
             </li>
           </ul>
         </div>

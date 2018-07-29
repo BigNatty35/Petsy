@@ -43,6 +43,15 @@ class Api::CartItemsController < ApplicationController
     @cart_item.destroy
     render "api/cart_items/show"
   end
+
+  def destroy_all
+    @cart_item_ids = params[:itemIds]
+    @cart_item_ids.each do |id|
+      item = CartItem.find(id)
+      item.destroy
+    end
+    render json: {}
+  end
   
   private
 

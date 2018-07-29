@@ -9,6 +9,7 @@ class ProductDetail extends React.Component {
     super(props);
     this.state = {
       value: 1,
+  
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);

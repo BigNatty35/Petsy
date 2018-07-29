@@ -1,7 +1,8 @@
 import { 
   RECEIVE_CART_ITEMS, 
   RECEIVE_CART_ITEM, 
-  REMOVE_CART_ITEM
+  REMOVE_CART_ITEM,
+  CLEAR_CART
 } from '../actions/cart_actions';
 import { LOGOUT_CURRENT_USER } from '../actions/session_actions';
 
@@ -19,6 +20,8 @@ const cartItemsReducer = (state = {}, action) => {
       return newState;
     case LOGOUT_CURRENT_USER:
       return {};
+    case CLEAR_CART:
+      return action.empty;
     default:
     return state;
   }

@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 import CartShow from './cart_show';
 import {getFilteredItems} from '../../reducers/selectors';
-import { fetchCartItems, deleteCartItem, updateCartItem, clearErrors} from '../../actions/cart_actions';
+import { fetchCartItems, deleteCartItem, updateCartItem, clearErrors, deleteCartItems} from '../../actions/cart_actions';
+import {withRouter} from 'react-router-dom';
 
 
 const msp = (state, ownProps) => {
   return {
-    cartItems: Object.values(state.entities.cartItems)
+    cartItems: Object.values(state.entities.cartItems),
+    cartItemIds: Object.keys(state.entities.cartItems)
   };
 };
 
@@ -17,11 +19,11 @@ const mdp = dispatch => {
     fetchCartItems: () => dispatch(fetchCartItems()),
     deleteCartItem: id => dispatch(deleteCartItem(id)),
     updateCartItem: (item) => dispatch(updateCartItem(item)),
-    clearErrors: () => dispatch(clearErrors())
-
+    clearErrors: () => dispatch(clearErrors()),
+    deleteCartItems: (itemIds) => dispatch(deleteCartItems())
   };
 };
 
 
 
-export default connect(msp, mdp)(CartShow);
+export default withRouter(connect(msp, mdp)(CartShow));
