@@ -86,7 +86,7 @@ class ProductDetail extends React.Component {
                   </div>
                     <div>
                       <label className="cart-quantity">Quantity:
-                        <input className="quantity-field" onChange={this.handleQuant.bind(this)} type="number" min="1" step="1" value={this.state.value}/>
+                        <input className="quantity-field" onChange={this.handleQuant.bind(this)} type="number" min="1" max="15" step="1" value={this.state.value}/>
                       </label>
                     </div>
                       <input type="submit" className="cart-button" value="Add to Cart"/>
