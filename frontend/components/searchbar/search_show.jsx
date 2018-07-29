@@ -25,11 +25,13 @@ class SearchShowContainer extends React.Component {
 
       return (
         <main>
-          <div className="category-box">
-            <div>
-              {this.props.searchItems.map(product =>
-                <ProductIndexItem product={product} key={product.id} />)}
-            </div>
+          <div className="list-box">
+            <ul className="items-list">
+              <li className="index-items">
+                {this.props.searchItems.map(product => <ProductIndexItem product={product} key={product.id} />
+                )}
+              </li>
+            </ul>
           </div>
         </main>
       );

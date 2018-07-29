@@ -17,12 +17,13 @@ class SearchBar extends React.Component {
     this.setState({ query: e.target.value });
   }
 
+
+
   onFormSubmit(e) {
     e.preventDefault();
     this.props.fetchSearchProduct(this.state.query).then(() => {
       this.props.history.push('/search');
     });
-    this.setState({query: ''});
   }
 
   render() {

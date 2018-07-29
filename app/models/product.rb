@@ -23,7 +23,7 @@ class Product < ApplicationRecord
   has_many :cart_items
   has_many :reviews
 
-  pg_search_scope :search_by_title, :against => [:title, :description],
+  pg_search_scope :search_by_title, :against => :title,
   :using => {
     :tsearch => {:prefix => true}
   }
