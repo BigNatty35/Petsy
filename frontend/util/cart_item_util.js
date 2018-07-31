@@ -35,7 +35,7 @@ export const deleteCartItem = (id) => {
 export const deleteCartItems = (itemIds) => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/cart_items/destroy_all`,
+    url: `/api/cart_items/remove_all`,
     data: {itemIds}
   });
 };

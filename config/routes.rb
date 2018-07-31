@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     resource :sessions, only: [:create, :destroy]
     resources :products, only: [:create, :index, :destroy, :show]
     resources :categories, only: [:show]
-    resources :cart_items, only: [:create, :destroy, :index, :show, :update]
+    resources :cart_items, only: [:create, :destroy, :index, :show, :update] do
+      delete "remove_all", on: :collection
+    end
     resources :reviews, only: [:create, :destroy, :index]
     resources :search_items, only: [:index]
   end

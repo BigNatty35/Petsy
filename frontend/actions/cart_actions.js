@@ -2,6 +2,7 @@ import * as CartUtil from "../util/cart_item_util";
 export const RECEIVE_CART_ITEMS = "RECEIVE_CART_ITEMS";
 export const RECEIVE_CART_ITEM = "RECEIVE_CART_ITEM";
 export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
+export const REMOVE_CART_ITEMS = "REMOVE_CART_ITEMS";
 export const RECEIVE_CART_ERRORS = "RECEIVE_CART_ERRORS";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const CLEAR_CART = "CLEAR_CART";
@@ -31,6 +32,12 @@ export const removeCartItem = (item) => {
   return {
     type: REMOVE_CART_ITEM,
     itemId: item.id
+  };
+};
+export const removeCartItems = (empty) => {
+  return {
+    type: REMOVE_CART_ITEMS,
+    empty
   };
 };
 

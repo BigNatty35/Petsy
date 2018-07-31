@@ -57,7 +57,7 @@ class CartShow extends React.Component {
                 <h1>{message}</h1>
               </div>
               <div>
-                {/* <button onClick={this.checkOut}>Checkout</button> */}
+                <button onClick={this.checkOut}>Checkout</button>
               </div>
           </div>
         </div>

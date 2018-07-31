@@ -20,7 +20,7 @@ const mdp = dispatch => {
     deleteCartItem: id => dispatch(deleteCartItem(id)),
     updateCartItem: (item) => dispatch(updateCartItem(item)),
     clearErrors: () => dispatch(clearErrors()),
-    deleteCartItems: (itemIds) => dispatch(deleteCartItems())
+    deleteCartItems: (itemIds) => dispatch(deleteCartItems(itemIds))
   };
 };
 

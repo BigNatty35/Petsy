@@ -44,7 +44,7 @@ class Api::CartItemsController < ApplicationController
     render "api/cart_items/show"
   end
 
-  def destroy_all
+  def remove_all
     @cart_item_ids = params[:itemIds]
     @cart_item_ids.each do |id|
       item = CartItem.find(id)
