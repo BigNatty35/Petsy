@@ -22,7 +22,7 @@ class CartShow extends React.Component {
 
   checkOut() {
     this.props.deleteCartItems(this.props.cartItemIds);
-    this.props.history.push('/checkout');
+    // this.props.history.push('/checkout');
   }
   
   render() {
@@ -33,6 +33,13 @@ class CartShow extends React.Component {
     let message = this.props.cartItems.length >= 1 ? `$${totalSum.toFixed(2)} is your total` : "There is nothing in your cart!";
     const total = this.props.cartItems.length != 1 ? `${this.props.cartItems.length} items in your cart` :
     "1 item in your cart";
+    let checkout;
+
+      if (this.props.cartItems.length >= 1) {
+        checkout = <button className="checkout-button" onClick={this.checkOut}>Checkout</button>;
+      } else {
+        checkout = null;
+      }
     return (
       <main className="main-cart">
         <div className="cartItems-box">
@@ -57,7 +64,7 @@ class CartShow extends React.Component {
                 <h1>{message}</h1>
               </div>
               <div>
-                <button className="checkout-button" onClick={this.checkOut}>Checkout</button>
+                {checkout}
               </div>
           </div>
         </div>
