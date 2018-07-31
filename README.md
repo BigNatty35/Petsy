@@ -1,24 +1,18 @@
-# README
+# RegrEtsy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Live Site](https://theregretsy.herokuapp.com/#/)
 
-Things you may want to cover:
 
-* Ruby version
+RegrEtsy is a fully functional single page fullstack application inspired by the website "Etsy". As Etsy allows users to buy and sell handmade or vintage items and supplies, RegrEtsy is a place you go to buy things you'll most likely regret.
 
-* System dependencies
+Implementing an MVC architecture, I used React and Redux on the frontend with Ruby on Rails on the backend, utilizing PostgreSQL as my datbase. 
 
-* Configuration
+## Features
 
-* Database creation
+* Users can log in and remained logged in if they leave site.
+* Users can add/remove/update items in their cart
+* Users can search for items using the searchbar
+* Users can leave star ratings and reviews on products.
+* Users not logged in will be redirected to sign in/register if trying to access the cart.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 
