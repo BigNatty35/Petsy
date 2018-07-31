@@ -43,6 +43,17 @@ const App = () => (
         <h1 className="Footerlogo"> RegrEtsy</h1>
         <p className="footertext">We make it easy to regret your things.</p>
         </div>
+        <div className="footer-right">
+          <div>
+            <p className="footertext">Created by Carey Johnson</p>
+          </div>
+          <a href="https://github.com/BigNatty35/Regretsy">
+              <img src="https://s3-us-west-1.amazonaws.com/productpics35/github-logo.png" alt=""/>
+            </a>
+          <a href="https://www.linkedin.com/in/carey-johnson1/">
+              <img className="linkedin-logo" src="https://s3-us-west-1.amazonaws.com/productpics35/Linkedin-logo.png" alt=""/>
+            </a>
+        </div>
       </footer>
     </div>
   </div>
