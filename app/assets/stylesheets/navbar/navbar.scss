@@ -40,6 +40,17 @@
       cursor: pointer;
     }
 
+    button:active {
+      color: rgb(242, 88, 30);
+    }
+
+    button:focus {
+      color: rgb(242, 88, 30);
+    }
+    button:target {
+      color: rgb(242, 88, 30);
+    }
+
     button:hover:after {
       width: 100%;
       background: rgb(242, 88, 30);
