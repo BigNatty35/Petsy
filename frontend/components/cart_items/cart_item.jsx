@@ -106,5 +106,3 @@ class CartItem extends React.Component {
 }
 
 export default CartItem;
-// update the quantity of a specific item
-// this should update the quantity of the cart item

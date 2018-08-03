@@ -35,7 +35,6 @@ class ProductDetail extends React.Component {
       product_id: this.props.product.id,
       quantity: this.state.value,
       product_img: this.props.product.img_url,
-      // user_id: this.props.userId
      };
     this.props.createCartItem(cartItem).then(() =>
     this.props.history.push('/cart'));
