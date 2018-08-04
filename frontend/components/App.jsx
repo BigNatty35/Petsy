@@ -40,7 +40,7 @@ const App = () => (
     <div className="footer-box">
       <footer className="footer">
         <div className='footer-left'>
-        <h1 className="Footerlogo"> BIG BURGER</h1>
+        <h1 className="Footerlogo">Regretsy</h1>
         <p className="footertext">We make it easy to regret your things.</p>
         </div>
         <div className="footer-right">
