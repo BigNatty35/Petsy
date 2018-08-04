@@ -12,7 +12,7 @@ class ProductIndex extends React.Component {
 
 
   componentDidMount() {
-    this.props.fetchProducts().then (() => 
+    this.props.fetchProducts().then(() => 
       this.setState({products: this.shuffle(this.props.products).slice(0,6)})
     );
   }
