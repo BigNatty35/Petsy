@@ -13,15 +13,6 @@ class SessionButtons extends React.Component {
   }
 
 
-  // componentDidMount() {
-  //   if (this.props.currentUser) {
-  //      this.props.fetchCartItems();
-  //   }
-  // }
-
-
-
-
   
   render() {
     const goHome = () => {

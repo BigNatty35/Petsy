@@ -3,14 +3,12 @@ import usersReducer from "./users_reducer";
 import productsReducer from "./products_reducer";
 import categoryReducer from "./category_reducer";
 import cartItemsReducer from './cart_items_reducer';
-// import reviewsReducer from './reviews_reducer';
 
 const entitiesReducer = combineReducers({
   users: usersReducer,
   products: productsReducer,
   category: categoryReducer,
   cartItems: cartItemsReducer
-  // reviews: reviewsReducer 
 });
 
 
