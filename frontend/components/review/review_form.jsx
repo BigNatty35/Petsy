@@ -7,8 +7,6 @@ class ReviewForm extends React.Component {
 
     this.state = {
       body: '', 
-      // author_name: this.props.username,
-      // author_id: this.props.userId, 
       rating: 5,
       product_id: this.props.product.id
 
